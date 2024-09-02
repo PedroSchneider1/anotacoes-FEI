@@ -1,0 +1,344 @@
+\documentclass[12pt]{article}
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{bm}
+\usepackage{enumitem} % For custom list labels
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{MAG120 - Cálculo Vetorial e Geometria Analítica}
+\author{Pedro Schneider}
+\date{2° Semestre de 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Cronograma e Notas}
+
+\subsection{Critério de Aproveitamento}
+A média final \textit{MF} é calculada pela fórmula:
+
+\begin{center}
+    \[
+    \bm{MF} = 0.3 \times \frac{(\bm{AT1} + \bm{AT2})}{2} + 0.7 \times \bm{PF}
+    \]
+\end{center}
+
+\noindent
+AT1, AT2 e AT3 - Atividades Avaliativas (avaliação continuada) com as datas pré-estabelecidas no cronograma.
+
+\noindent
+\textbf{OBS.:} SERÃO REALIZADAS TRÊS ATIVIDADES, PORÉM SÓ SERÃO UTILIZADAS AS DUAS MAIORES NOTAS (A MENOR DELAS SERÁ DESCARTADA).
+
+\noindent
+\break \textbf{PF} - Prova final contemplando todo conteúdo do semestre.
+
+\noindent
+A nota da avaliação PF poderá ser substituída pela nota da avaliação PS, caso o aluno não alcance média final maior ou igual a 5,0.
+
+\renewcommand{\arraystretch}{1.25} % Increase row height for better readability
+\subsection{Cronograma}
+\begin{table}[]
+    \caption{Cronograma semestral}
+    \label{tab:cronograma}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{Semanas} & \textbf{Datas}                                                                                & \textbf{Conteúdo}                                                                                                                                        \\ \hline
+    Sem. 1           & 08/08 a 10/08                                                                                 & \begin{tabular}[c]{@{}c@{}}MATRIZES. OPERAÇÕES.\\ MATRIZ TRANSPOSTA E MATRIZ INVERSA.\\ FÓRMULA DE BINET\end{tabular}                                    \\ \hline
+    Sem. 2           & 12/08 a 16/08                                                                                 & SISTEMAS LINEARES                                                                                                                                        \\ \hline
+    Sem. 3           & 19/08 a 24/08                                                                                 & SISTEMAS LINEARES                                                                                                                                        \\ \hline
+    Sem. 4           & \begin{tabular}[c]{@{}c@{}}26/08 a 31/08\\ \textbf{ATP 1}\end{tabular}                        & \begin{tabular}[c]{@{}c@{}}SEGMENTOS ORIENTADOS.\\ EQUIPOLÊNCIA VETORES.\\ OPERAÇÕES COM VETORES.\end{tabular}                                           \\ \hline
+    Sem. 5           & \begin{tabular}[c]{@{}c@{}}02/09 a 07/09\\ \textit{\textbf{Feriado 07/09}}\end{tabular}       & \begin{tabular}[c]{@{}c@{}}DEPENDÊNCIA LINEAR E BASES.\\ COORDENADAS DE UM VETOR\end{tabular}                                                            \\ \hline
+    Sem. 6           & 09/09 a 14/09                                                                                 & \begin{tabular}[c]{@{}c@{}}MUDANÇA DE BASE.\\ EQUAÇÕES DE MUDANÇA\end{tabular}                                                                           \\ \hline
+    Sem. 7           & 16/09 a 21/09                                                                                 & PRODUTOS ESCALAR                                                                                                                                         \\ \hline
+    Sem. 8           & 23/09 a 28/09                                                                                 & \begin{tabular}[c]{@{}c@{}}PRODUTOS ESCALAR (continuação).\\ VETOR PROJEÇÃO ORTOGONAL e\\ COSSENOS DIRETORES\end{tabular}                                \\ \hline
+    Sem. 9           & \begin{tabular}[c]{@{}c@{}}30/09 a 04/10\\ \textbf{ATP 2}\end{tabular}                        & PRODUTO VETORIAL E APLICAÇÕES.                                                                                                                           \\ \hline
+    Sem. 10          & \begin{tabular}[c]{@{}c@{}}07/10 a 12/10\\ \textit{\textbf{Feriado 12/10}}\end{tabular}       & PRODUTO MISTO.                                                                                                                                           \\ \hline
+    Sem. 11          & 14/10 a 19/10                                                                                 & \begin{tabular}[c]{@{}c@{}}SISTEMAS DE COORDENADAS.\\ EQUAÇÕES DA RETA.\\ Posições relativas entre duas retas.\end{tabular}                              \\ \hline
+    Sem. 12          & \begin{tabular}[c]{@{}c@{}}21/10 a 26/10\\ \textit{22 e 23 - INOVAÇÃO}\end{tabular}           & \begin{tabular}[c]{@{}c@{}}EQUAÇÕES DO PLANO.\\ VETOR NORMAL A UM PLANO.\end{tabular}                                                                    \\ \hline
+    Sem. 13          & \begin{tabular}[c]{@{}c@{}}28/10 a 02/11\\ \textit{\textbf{Feriado 02/11}}\end{tabular}       & \begin{tabular}[c]{@{}c@{}}EQUAÇÕES DO PLANO.\\ VETOR NORMAL A UM PLANO.\end{tabular}                                                                    \\ \hline
+    Sem. 14          & \begin{tabular}[c]{@{}c@{}}04/11 a 09/11\\ \textbf{ATP 3}\end{tabular}                        & \begin{tabular}[c]{@{}c@{}}POSIÇÕES RELATIVAS ENTRE\\ RETAS E PLANOS.\end{tabular}                                                                       \\ \hline
+    Sem. 15          & 11/11 a 16/11                                                                                 & \begin{tabular}[c]{@{}c@{}}PROBLEMAS CLÁSSICOS\\ DE GEOMETRIA ESPACIAL.\end{tabular}                                                                     \\ \hline
+    Sem. 16          & 18/11 a 20/11                                                                                 & DISTÂNCIAS.                                                                                                                                              \\ \hline
+    \textbf{Sem. 17-19}       & \textbf{\begin{tabular}[c]{@{}c@{}}21/11 a 30/11\\ 02/12 a 07/12\\ 09/12 a 14/12\\ 20/12\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}PERÍODO PROVAS FINAIS\\ REVISÃO DE PROVAS\\ PERÍODO PROVAS SUBSTITUTIVAS\end{tabular}}              \\ \hline
+    \end{tabular}
+\end{table}
+
+\pagebreak
+
+\section{Semana 1 - Matrizes}
+\subsection{Fundamentos e tipos}
+
+\subsubsection{O que são matrizes?}
+É uma tabela contendo $M \times N$ elementos, com $M,N \in \mathbb{N}$, dispostos em linhas e colunas.
+Ex.: \[
+A = 
+    \begin{pmatrix}
+        -2       & 1    \\
+        -5       & 0    \\
+        \sqrt{7} & 1/3
+    \end{pmatrix}
+\]
+
+\subsubsection{Como indicar matrizes?}
+Com letra latina maiúscula, $A=[a_{ij}]$, onde $i$ indica a \textbf{linha} e $j$ indica a \textbf{coluna} em que se encontra o elemento;
+sabendo que $1 \leq i \leq m$ e $1 \leq j \leq n$.
+
+\noindent
+\[
+A = [a_{ij}] \quad \text{onde} \quad 1 \leq i \leq 2 \text{ e } 1 \leq j \leq 3 \ \rightarrow \ A =
+\begin{array}{c}
+    \hphantom{}
+        \begin{pmatrix}
+            a_{11} & a_{12} & a_{13} \\
+            a_{21} & a_{22} & a_{23}
+        \end{pmatrix}
+\end{array}
+\]
+
+\subsubsection{Matriz Quadrada}
+Quando $m=n$, ou seja, número de linhas é igual ao número de colunas.
+\noindent
+\[
+A = 
+    \begin{pmatrix}
+        2  & -1  &  3 \\
+        0  &  5  & -2 \\
+        1  &  7  &  1
+    \end{pmatrix}
+\]
+
+\subsubsection{Matriz Retangular}
+Quando $m \neq n$, ou seja, número de linhas é diferente do número de colunas.
+\noindent
+\[
+A = 
+\begin{array}{c}
+    \begin{pmatrix}
+         2  & -1 \\
+        -5  &  4 \\
+         3  &  0 
+    \end{pmatrix} \\
+        \text{Ordem } 3 \times 2
+\end{array}
+\]
+
+\subsubsection{Matriz Nula}
+Quando todos os elementos são nulos, ou seja, iguais a 0.
+\noindent
+\[
+A = 
+    \begin{pmatrix}
+        0  &  0  &  0 \\
+        0  &  0  &  0 \\
+        0  &  0  &  0
+    \end{pmatrix}
+\]
+
+\subsubsection{Matriz Identidade}
+Quando temos uma matriz quadrada onde os elementos da diagonal principal são unitários e os demais são nulos, ou seja,
+se $i=j \rightarrow a_{ij} = 1 \text{ e se } i \neq j \rightarrow a_{ij} = 0$.
+\noindent
+\[
+I_3 =
+\begin{array}{c}
+    \begin{pmatrix}
+        1  &  0  &  0 \\
+        0  &  1  &  0 \\
+        0  &  0  &  1
+    \end{pmatrix}
+        \text{; }
+
+I_2 =
+    \begin{pmatrix}
+        1  &  0 \\
+        0  &  1 \\
+        0  &  0
+    \end{pmatrix} 
+\end{array}
+\]
+
+\subsubsection{Matriz Diagonal}
+Quando temos uma matriz quadrada onde os elementos da diagonal principal são unitários e os demais são nulos, ou seja,
+se $i=j \rightarrow a_{ij} \neq 0 \text{ e se } i \neq j \rightarrow a_{ij} = 0$.
+\noindent
+\[
+A =
+\begin{array}{c}
+    \begin{pmatrix}
+        -1  &  0  &  0 \\
+         0  &  5  &  0 \\
+         0  &  0  &  7
+    \end{pmatrix}
+\end{array}
+\]
+
+\subsubsection{Matriz Transposta}
+Dada a matriz $A=[a_{ij}]$; $1 \leq i \leq m \text{, } 1 \leq j \leq n$, a matriz transposta é indicada por
+$A^T$, e é a matriz tal que $B=[b_{ij}]$, onde $b_{ij} = a_{ij}$.
+\noindent
+\[
+A =
+    \begin{array}{c}
+        \begin{pmatrix}
+            -1  &  2  & -3 \\
+            2  & -3  &  4
+        \end{pmatrix}
+    \end{array}
+\implies
+A^T = 
+    \begin{array}{c}
+        \begin{pmatrix}
+            -1  &  2 \\
+             2  & -3 \\
+            -3  &  4
+        \end{pmatrix}
+    \end{array}
+\]
+
+\subsection{Operações com matrizes}
+\subsubsection{Adição}
+Dadas duas matrizes de mesma ordem: $A=[a_{ij}] \text{ e } B=[b_{ij}]$, $1 \leq i \leq m$ e $1 \leq j \leq n$, a soma é a matriz: $A+B=(a_{ij}+b_{ij})$.
+
+\noindent
+Ex.: \[
+\begin{array}{c}
+    \begin{pmatrix}
+         2  & -3 \\
+         8  &  5
+    \end{pmatrix}
+\end{array}
+    +
+\begin{array}{c}
+    \begin{pmatrix}
+        -1  &  2 \\
+         4  & -3
+    \end{pmatrix}
+\end{array}
+    =
+\begin{array}{c}
+    \begin{pmatrix}
+         1  & -1 \\
+        12  &  2
+    \end{pmatrix}
+\end{array}
+\]
+\\
+\noindent
+\textbf{Propriedades da adição de matrizes}
+\\
+$\forall A,B,C$, de mesma ordem, tem-se:
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item \textbf{Comutatividade}: \( A + B = B + A \)
+    \item \textbf{Associatividade}: \( A + (B + C) = (A + B) + C \)
+    \item \textbf{Existência do elemento neutro}: \( A + 0 = A \)
+    \item \textbf{Existência do elemento oposto}: \( A + (-A) = 0 \)
+\end{enumerate}
+
+\subsubsection{Multiplicação por um número real}
+Dado um número real $\lambda$ e uma matriz $A=[a_{ij}]$, de ordem $M \times N$:
+
+\noindent
+$\lambda A = \lambda [a_{ij}] = \lambda a_{ij}$
+
+\noindent
+Ex.: \[ A =
+\begin{array}{c}
+    \begin{pmatrix}
+         2  & -3 \\
+         8  &  5
+    \end{pmatrix}
+\end{array}
+    \text{, }
+3A = 
+\begin{array}{c}
+    \begin{pmatrix}
+         6  &  -9 \\
+        24  & 15
+    \end{pmatrix}
+\end{array}
+\]
+\\
+\noindent
+\textbf{Propriedades da multiplicação de matrizes por um número real}
+\\
+$\forall A,B$, de mesma ordem, $\forall \lambda$, $\mu \in \Re$  tem-se:
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item \( (\lambda A) \mu = (\lambda \mu) A \)
+    \item \( \lambda (A+B) = \lambda A + \lambda B \)
+    \item \( (\lambda \mu) A = \lambda A + \mu A \)
+    \item \textbf{Existência do elemento neutro}: \( 1A = A \)
+\end{enumerate}
+
+\subsubsection{Multiplicação entre duas raízes}
+Dadas duas matrizes $A=[a_{ij}] \text{ e } B=[b_{jk}]$, $1 \leq i \leq m \text{ , } 1 \leq j \leq n \text{ e } 1 \leq k \leq p$,
+o produto de A por B é uma matriz $C=[c_{ik}]$, de ordem $N \times P$, onde $c_{ik} = \sum_{1}^{n} a_{ij}b_{jk}$.
+O produto entre duas matrizes só é possível se o número de \textbf{colunas} da matriz A for \textbf{igual} ao número de \textbf{linhas} da matriz B.
+
+\noindent
+Ex.: \[
+A =
+    \begin{pmatrix}
+        1  &  2 \\
+        2  &  1
+    \end{pmatrix}
+\quad
+B =
+    \begin{pmatrix}
+        3  & -1 \\
+        5  &  4
+    \end{pmatrix}
+\]
+
+\[
+AB =
+    \begin{pmatrix}
+        1 \cdot 3 + 2 \cdot 5 & 1 \cdot (-1) + 2 \cdot 4 \\
+        2 \cdot 3 + 1 \cdot 5 & 2 \cdot (-1) + 1 \cdot 4
+    \end{pmatrix}
+=
+    \begin{pmatrix}
+        13  &  7 \\
+        11  &  2
+    \end{pmatrix}
+\]
+
+\[
+BA =
+    \begin{pmatrix}
+        3 \cdot 1 + (-1) \cdot 2 & 3 \cdot 2 + (-1) \cdot 1 \\
+        5 \cdot 1 + 4 \cdot 2 & 5 \cdot 2 + 4 \cdot 1
+    \end{pmatrix}
+=
+    \begin{pmatrix}
+         1  &  5 \\
+        13  &  14
+    \end{pmatrix}
+\]
+\\
+\noindent
+\textbf{Propriedades da multiplicação entre matrizes}
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item O produto AB e BA não é comutativo, dependendo da ordem das matrizes esse produto pode nem existir,
+    e caso exista, a ordem da matriz produto poderá ser diferente.
+
+    Ex.: \( A_{3 \times 2} B_{2 \times 1} = C_{3 \times 1}\) e \( B_{2 \times 1} A_{3 \times 2} = \nexists\)
+    \textbf{(Não é possível realizar essa operação)}
+    \item \((A+B) \cdot C = AC+BC\) é válida? \\
+    Sim, desde que existam esses produtos.
+\end{enumerate}
+
+\subsubsection{Operações com matriz transposta}
+\noindent
+\textbf{Propriedades da matriz transposta}
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item $(A + B)^T = A^T + B^T$
+    \item $(AB)^T = B^T A^T$
+    \item $(A^T)^T = A$
+    \item $(\lambda A)^T = \lambda A^T, \lambda \in \Re$
+\end{enumerate}
+
+\end{document}

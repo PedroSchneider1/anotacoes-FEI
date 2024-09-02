@@ -1,0 +1,124 @@
+\documentclass[12pt]{article}
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{bm}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{MAC120 - Cálculo Diferencial e Integral}
+\author{Pedro Schneider}
+\date{2° Semestre de 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Cronograma e Notas}
+
+\subsection{Critério de Aproveitamento}
+A média final \textit{M} é calculada pela fórmula:
+
+\begin{center}
+    \[
+    \bm{M} = 0.3A + 0.7PF
+    \]
+\end{center}
+
+\noindent
+Serão efetuadas três atividades \textit{(A1, A2 e A3)} e uma prova final \textit{(PF)}, sendo $A$ a média aritmética das atividades.
+
+\noindent
+Se a média \textit{(M)} for menor que 5.0, o aluno(a) poderá fazer uma prova substitutiva \textit{(SUB)}.
+A nota da prova \textit{SUB} poderá substituir a nota da prova final \textit{PF}.
+A substituição só ocorrerá se a nota da prova substitutiva for maior que a nota da prova final.
+O cálculo da nova média é feito pela mesma fórmula acima, trocando a nota da prova final pela nota da prova substitutiva, se for o caso.
+
+\renewcommand{\arraystretch}{1.25} % Increase row height for better readability
+\subsection{Cronograma}
+\begin{table}[]
+    \centering
+    \caption{Cronograma semestral}
+    \label{tab:cronograma}
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Datas}                                                                                & \textbf{Conteúdo}                                                                                                                                                                               \\ \hline
+    08/08 a 17/08                                                                                 & \begin{tabular}[c]{@{}c@{}}Apresentação do plano de ensino da disciplina:\\cronograma, critério de notas e bibliografia.\\Exercícios de revisão sobre funções.\end{tabular}                     \\ \hline
+    19/08 a 24/08                                                                                 & \begin{tabular}[c]{@{}c@{}}Limite e continuidade: noções intuitivas e exemplos.\\Propriedades algébricas dos limites.\\Indeterminação $\frac{0}{0}$: funções racionais.\end{tabular}            \\ \hline
+    26/08 a 31/08                                                                                 & \begin{tabular}[c]{@{}c@{}}Indeterminação $\frac{0}{0}$: raiz quadrada.\\Indeterminação $\frac{0}{0}$: raízes.\\Mudança de variável no limite e primeiro limite fundamental.\end{tabular}       \\ \hline
+    02/09 a 07/09                                                                                 & \begin{tabular}[c]{@{}c@{}}Limites no infinito.\\Segundo limite fundamental.\end{tabular}                                                                                                       \\ \hline
+\begin{tabular}[c]{@{}c@{}}09/09 a 14/09\\ \textbf{Atividade $A_1$}\end{tabular}                  & Limites laterais e continuidade.                                                                                                                                                                \\ \hline
+    16/09 a 21/09                                                                                 & \begin{tabular}[c]{@{}c@{}}Os problemas da reta tangente e da velocidade instantânea.\\Derivada: definição e exemplos.\\Regras de derivação.\end{tabular}                                       \\ \hline
+    23/09 a 28/09                                                                                 & A regra da cadeia.                                                                                                                                                                              \\ \hline
+    30/09 a 05/10                                                                                 & \begin{tabular}[c]{@{}c@{}}Derivação implícita e derivadas de ordens superiores.\\Reta tangente e reta normal.\\Regras de L'Hôpital.\end{tabular}                                                \\ \hline
+    07/10 a 12/10                                                                                 & \begin{tabular}[c]{@{}c@{}}Estudo do comportamento das funções.\\Problemas de otimização.\end{tabular}                                                                                          \\ \hline
+    \begin{tabular}[c]{@{}c@{}}14/10 a 19/10\\ \textbf{Atividade $A_2$}\end{tabular}              & Problemas de otimização.                                                                                                                                                                        \\ \hline
+    21/10 a 26/10                                                                                 & \begin{tabular}[c]{@{}c@{}}Integral: primitivas e propriedades básicas.\\Integrais imediatas.\\Métodos de integração: substituição.\end{tabular}                                                \\ \hline
+    28/10 a 02/11                                                                                 & Métodos de integração: por partes e integração de funções racionais.                                                                                                                            \\ \hline
+    04/11 a 09/11                                                                                 & \begin{tabular}[c]{@{}c@{}}Integral definida e propriedades básicas.\\Teorema fundamental do cálculo.\\Aplicações da integral definida: áreas e comprimento de curvas.\end{tabular}             \\ \hline
+    \begin{tabular}[c]{@{}c@{}}11/11 a 19/11\\ \textbf{Atividade $A_3$}\end{tabular}              & Aplicações da integral definida: áreas e comprimento de curvas.                                                                                                                                 \\ \hline
+    21/11 a 30/11                                                                                 & \textbf{Provas Finais}                                                                                                                                                                          \\ \hline
+    02/12 a 07/12                                                                                 & \textbf{Atividades Especiais}                                                                                                                                                                   \\ \hline
+    09/12 a 14/12                                                                                 & \textbf{Provas Substitutivas}                                                                                                                                                                   \\ \hline
+    \end{tabular}
+\end{table}
+
+\pagebreak
+\section{Regras de Derivação}
+
+Nesta seção, vamos apresentar algumas regras básicas de derivação que serão úteis ao longo do curso. As regras de derivação nos permitem calcular a derivada de uma função de forma mais simples e eficiente.
+
+\subsection{Regra da Potência}
+
+Seja $f(x) = x^n$, onde $n$ é um número real. A derivada de $f(x)$ em relação a $x$ é dada por:
+
+\[
+f'(x) = nx^{n-1}
+\]
+
+Essa regra nos permite calcular a derivada de funções polinomiais de forma direta.
+
+\subsection{Regra da Soma e Diferença}
+
+Sejam $f(x)$ e $g(x)$ duas funções diferenciáveis. A derivada da soma ou diferença dessas funções é dada pela soma ou diferença das derivadas individuais:
+
+\[
+(f \pm g)'(x) = f'(x) \pm g'(x)
+\]
+
+Essa regra nos permite calcular a derivada de funções que são somas ou diferenças de outras funções.
+
+\subsection{Regra do Produto}
+
+Sejam $f(x)$ e $g(x)$ duas funções diferenciáveis. A derivada do produto dessas funções é dada por:
+
+\[
+(f \cdot g)'(x) = f'(x) \cdot g(x) + f(x) \cdot g'(x)
+\]
+
+Essa regra nos permite calcular a derivada de funções que são produtos de outras funções.
+
+\subsection{Regra do Quociente}
+
+Sejam $f(x)$ e $g(x)$ duas funções diferenciáveis, com $g(x) \neq 0$. A derivada do quociente dessas funções é dada por:
+
+\[
+\left(\frac{f}{g}\right)'(x) = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{(g(x))^2}
+\]
+
+Essa regra nos permite calcular a derivada de funções que são quocientes de outras funções.
+
+\subsection{Regra da Cadeia}
+
+Seja $f(x)$ uma função diferenciável e $g(x)$ uma função diferenciável de $u$. A derivada da composição dessas funções é dada por:
+
+\[
+(f \circ g)'(x) = f'(g(x)) \cdot g'(x)
+\]
+
+Essa regra nos permite calcular a derivada de funções compostas.
+
+Essas são apenas algumas das regras de derivação mais comuns. Existem outras regras que podem ser utilizadas para calcular a derivada de funções mais complexas. Ao longo do curso, vamos explorar essas regras em mais detalhes e aprender como aplicá-las em diferentes situações.
+
+\end{document}
