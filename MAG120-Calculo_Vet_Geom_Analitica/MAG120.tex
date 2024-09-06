@@ -16,6 +16,10 @@
 
 \maketitle
 
+\tableofcontents
+
+\pagebreak
+
 \section{Cronograma e Notas}
 
 \subsection{Critério de Aproveitamento}
@@ -199,6 +203,68 @@ A^T =
     \end{array}
 \]
 
+\subsubsection{Matriz Simétricas}
+Uma matriz quadrada $A=[a_{ij}]$ é simétrica se $a_{ij} = a_{ji}$ para todos os elementos da matriz. Em outras palavras, é uma matriz quadrada tal que: $A = A^T$.
+
+\[
+A =
+    \begin{array}{c}
+        \begin{pmatrix}
+            1  &  2  &  3 \\
+            2  &  4  &  5 \\
+            3  &  5  &  6 \\
+        \end{pmatrix}
+    \end{array}
+, A=A^T
+\]
+
+\subsubsection{Matriz Antissimétricas}
+Uma matriz quadrada tal que: $A = -A^T$.
+
+\[
+A =
+    \begin{array}{c}
+        \begin{pmatrix}
+            0  &  2  & -4 \\
+           -2  &  0  &  3 \\
+            4  & -3  &  0 \\
+        \end{pmatrix}
+    \end{array}
+, A=-A^T
+\]
+
+\subsubsection{Matriz Inversa}
+\textbf{Se a matriz $A$ é quadrada, quem é sua inversa?}
+
+\noindent
+É outra matriz quadrada, indicada por $A^{-1}$, que satisfaz a condição $A \cdot A^{-1} = A^{-1} \cdot A = I_n$, sendo $I_n$ a matriz identidade de ordem $n$.
+
+Ex.: \[
+A =
+    \begin{array}{c}
+        \begin{pmatrix}
+            2  &  1  &  1 \\
+           -1  &  3  &  1 \\
+            3  & -1  &  1 \\
+        \end{pmatrix}
+    \end{array}
+, entao:
+A^{-1} =
+    \frac{1}{4} \cdot
+    \begin{array}{c}
+        \begin{pmatrix}
+            4  & -2  & -2 \\
+            4  & -1  & -3 \\
+           -8  &  5  &  7 \\
+        \end{pmatrix}
+    \end{array}
+    , pois A^{-1}A=I_3 
+\]
+
+\noindent
+\textbf{Toda matriz quadrada é invertível?} \\
+Não, a matriz só possui inversa se o seu determinante for não nulo ($det(A) \neq 0$).
+
 \subsection{Operações com matrizes}
 \subsubsection{Adição}
 Dadas duas matrizes de mesma ordem: $A=[a_{ij}] \text{ e } B=[b_{ij}]$, $1 \leq i \leq m$ e $1 \leq j \leq n$, a soma é a matriz: $A+B=(a_{ij}+b_{ij})$.
@@ -339,6 +405,15 @@ BA =
     \item $(AB)^T = B^T A^T$
     \item $(A^T)^T = A$
     \item $(\lambda A)^T = \lambda A^T, \lambda \in \Re$
+\end{enumerate}
+
+\subsubsection{Operações com matriz inversa}
+\noindent
+\textbf{Propriedades da matriz inversa}
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item $(A^{-1})^{-1} = A$
+    \item $(AB)^{-1} = B^{-1} A^{-1}$
+    \item $(\lambda A)^{-1} = \lambda^{-1} A^{-1}, \lambda \in \Re$
 \end{enumerate}
 
 \end{document}

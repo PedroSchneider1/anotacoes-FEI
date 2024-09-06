@@ -4,6 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{bm}
+\usepackage{tikz}
 \usepackage{geometry}
 \geometry{a4paper, margin=1in}
 
@@ -65,12 +66,107 @@ O cálculo da nova média é feito pela mesma fórmula acima, trocando a nota da
 \end{table}
 
 \pagebreak
-\section{Regras de Derivação}
+\section{Conjuntos e Intervalos Numéricos}
 
+Nesta seção, vamos explorar os conjuntos numéricos que são fundamentais para o estudo de pré-cálculo. Esses conjuntos são utilizados para representar diferentes tipos de números e suas propriedades.
+
+\subsection{Conjunto dos Números Naturais ($\mathbb{N}$)}
+
+O conjunto dos números naturais é representado pelo símbolo $\mathbb{N}$ e é composto pelos números inteiros não negativos, ou seja, os números 0, 1, 2, 3, ... O conjunto dos números naturais é utilizado para contar objetos e representar quantidades.
+
+\subsection{Conjunto dos Números Inteiros ($\mathbb{Z}$)}
+
+O conjunto dos números inteiros é representado pelo símbolo $\mathbb{Z}$ e é composto pelos números naturais, seus opostos negativos e o número zero. Ou seja, o conjunto dos números inteiros inclui os números ..., -3, -2, -1, 0, 1, 2, 3, ...
+
+\subsection{Conjunto dos Números Racionais ($\mathbb{Q}$)}
+
+O conjunto dos números racionais é representado pelo símbolo $\mathbb{Q}$ e é composto por todos os números que podem ser expressos na forma de fração, onde o numerador e o denominador são números inteiros e o denominador é diferente de zero. Por exemplo, $\frac{1}{2}$, $\frac{3}{4}$, $\frac{-5}{2}$ são números racionais. Além disso, os números inteiros também são considerados números racionais, pois podem ser expressos como frações com denominador igual a 1.
+
+\subsection{Conjunto dos Números Irracionais ($\mathbb{I}$)}
+
+O conjunto dos números irracionais é representado pelo símbolo $\mathbb{I}$ e é composto por todos os números que não podem ser expressos na forma de fração. Esses números têm infinitas casas decimais não periódicas. Exemplos de números irracionais são $\pi$, $\sqrt{2}$, $\sqrt{3}$.
+
+\subsection{Conjunto dos Números Reais ($\mathbb{R}$)}
+
+O conjunto dos números reais é representado pelo símbolo $\mathbb{R}$ e é a união dos conjuntos dos números racionais e irracionais. Ou seja, o conjunto dos números reais inclui todos os números que podem ser expressos como frações e todos os números que não podem ser expressos como frações. O conjunto dos números reais é utilizado para representar quantidades contínuas, como medidas, valores monetários, entre outros.
+
+Esses são os conjuntos numéricos mais comuns utilizados em pré-cálculo. Cada conjunto possui propriedades e características específicas que serão exploradas ao longo do curso. É importante compreender esses conjuntos e suas relações para o estudo de pré-cálculo e cálculo.
+
+% New Section
+
+\subsection{Denominação de Intervalos Numéricos}
+
+Nesta seção, vamos explorar a denominação de intervalos numéricos, que são conjuntos de números reais que estão entre dois valores específicos. A denominação de intervalos é útil para descrever conjuntos contínuos de números e representar intervalos de valores em problemas matemáticos.
+
+Um intervalo numérico é denotado por um par de valores separados por um símbolo especial. Existem diferentes tipos de intervalos, dependendo das propriedades dos valores incluídos no intervalo.
+
+\subsubsection{Intervalo Fechado}
+
+Um intervalo fechado inclui todos os números reais entre dois valores específicos, incluindo os próprios valores. É denotado pelo símbolo $[a, b]$, onde $a$ e $b$ são os valores extremos do intervalo. Por exemplo, o intervalo fechado $[2, 5]$ inclui todos os números reais de 2 a 5, incluindo 2 e 5.
+
+\subsubsection{Intervalo Aberto}
+
+Um intervalo aberto inclui todos os números reais entre dois valores específicos, excluindo os próprios valores. É denotado pelo símbolo $(a, b)$, onde $a$ e $b$ são os valores extremos do intervalo. Por exemplo, o intervalo aberto $(2, 5)$ inclui todos os números reais entre 2 e 5, excluindo 2 e 5.
+
+\subsubsection{Intervalo Semiaberto}
+
+Um intervalo semiaberto inclui todos os números reais entre dois valores específicos, incluindo um dos valores e excluindo o outro. Existem dois tipos de intervalos semiabertos: intervalo semiaberto à esquerda e intervalo semiaberto à direita.
+
+Um intervalo semiaberto à esquerda é denotado pelo símbolo $[a, b)$, onde $a$ é incluído no intervalo e $b$ é excluído. Por exemplo, o intervalo semiaberto à esquerda $[2, 5)$ inclui todos os números reais de 2 a 5, incluindo 2 e excluindo 5.
+
+Um intervalo semiaberto à direita é denotado pelo símbolo $(a, b]$, onde $a$ é excluído e $b$ é incluído no intervalo. Por exemplo, o intervalo semiaberto à direita $(2, 5]$ inclui todos os números reais entre 2 e 5, excluindo 2 e incluindo 5.
+
+\subsubsection{Intervalo Infinito}
+
+Um intervalo infinito inclui todos os números reais maiores ou menores que um valor específico. Existem dois tipos de intervalos infinitos: intervalo infinito à esquerda e intervalo infinito à direita.
+
+Um intervalo infinito à esquerda é denotado pelo símbolo $(-\infty, a)$, onde $a$ é o valor extremo do intervalo. Por exemplo, o intervalo infinito à esquerda $(-\infty, 2)$ inclui todos os números reais menores que 2.
+
+Um intervalo infinito à direita é denotado pelo símbolo $(a, \infty)$, onde $a$ é o valor extremo do intervalo. Por exemplo, o intervalo infinito à direita $(2, \infty)$ inclui todos os números reais maiores que 2.
+
+\begin{itemize}
+    \item \textbf{Intervalo fechado}: $[a, b] = \{x \in \mathbb{R} \,|\, a \leq x \leq b\}$
+    \item \textbf{Intervalo aberto}: $(a, b) = \{x \in \mathbb{R} \,|\, a < x < b\}$
+    \item \textbf{Intervalo aberto à direita}: $[a, b) = \{x \in \mathbb{R} \,|\, a \leq x < b\}$
+    \item \textbf{Intervalo aberto à esquerda}: $(a, b] = \{x \in \mathbb{R} \,|\, a < x \leq b\}$
+    \item \textbf{Intervalo infinito à esquerda}: $(-\infty, a) = \{x \in \mathbb{R} \,|\, x < a\}$
+    \item \textbf{Intervalo infinito à direita}: $(a, \infty) = \{x \in \mathbb{R} \,|\, x > a\}$
+\end{itemize}
+
+% New Section
+
+\section{Generalidades de Funções}
+
+Nesta seção, vamos explorar as generalidades de funções, incluindo o domínio, a imagem, o gráfico, as raízes e os sinais.
+
+\subsection{Domínio}
+
+O domínio de uma função é o conjunto de todos os valores de entrada para os quais a função está definida. Em outras palavras, é o conjunto de valores de $x$ para os quais a função $f(x)$ produz um valor válido. O domínio é geralmente expresso como um intervalo ou uma combinação de intervalos.
+
+\subsection{Imagem}
+
+A imagem de uma função é o conjunto de todos os valores de saída que a função pode assumir. Em outras palavras, é o conjunto de valores de $y$ que a função $f(x)$ pode assumir para diferentes valores de $x$. A imagem é geralmente expressa como um intervalo ou uma combinação de intervalos.
+
+\subsection{Gráfico}
+
+O gráfico de uma função é uma representação visual da relação entre os valores de entrada e os valores de saída da função. É uma representação bidimensional que mostra como os valores de $x$ se relacionam com os valores de $y$ da função. O gráfico pode ser plotado em um sistema de coordenadas cartesianas, onde o eixo horizontal representa os valores de $x$ e o eixo vertical representa os valores de $y$.
+
+\subsection{Raízes}
+
+As raízes de uma função são os valores de $x$ para os quais a função $f(x)$ é igual a zero. Em outras palavras, são os valores de entrada que fazem com que a função se anule. As raízes podem ser encontradas resolvendo a equação $f(x) = 0$.
+
+\subsection{Sinais}
+
+Os sinais de uma função são os valores de $y$ que a função $f(x)$ pode assumir para diferentes valores de $x$. Os sinais podem ser positivos, negativos ou zero, dependendo do valor da função para um determinado valor de $x$. Os sinais podem ser determinados analisando o gráfico da função ou avaliando a função para diferentes valores de $x$.
+
+Essas são algumas das generalidades de funções que são importantes para entender o comportamento e as propriedades das funções. Ao estudar uma função específica, é importante analisar seu domínio, sua imagem, seu gráfico, suas raízes e seus sinais para obter uma compreensão completa da função
+
+% New Section
+
+\section{Regras de Derivação}
 Nesta seção, vamos apresentar algumas regras básicas de derivação que serão úteis ao longo do curso. As regras de derivação nos permitem calcular a derivada de uma função de forma mais simples e eficiente.
 
 \subsection{Regra da Potência}
-
 Seja $f(x) = x^n$, onde $n$ é um número real. A derivada de $f(x)$ em relação a $x$ é dada por:
 
 \[
