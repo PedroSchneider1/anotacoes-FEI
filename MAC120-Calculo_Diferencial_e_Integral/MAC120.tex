@@ -4,7 +4,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{bm}
-\usepackage{tikz}
+\usepackage[hidelinks]{hyperref} % For linking table of contents
+\usepackage{enumitem} % For custom list labels
+\usepackage{tikz} % To draw planes
 \usepackage{geometry}
 \geometry{a4paper, margin=1in}
 
@@ -16,6 +18,9 @@
 
 \maketitle
 
+\tableofcontents
+
+\pagebreak
 \section{Cronograma e Notas}
 
 \subsection{Critério de Aproveitamento}
@@ -67,46 +72,42 @@ O cálculo da nova média é feito pela mesma fórmula acima, trocando a nota da
 
 \pagebreak
 \section{Conjuntos e Intervalos Numéricos}
-
-Nesta seção, vamos explorar os conjuntos numéricos que são fundamentais para o estudo de pré-cálculo. Esses conjuntos são utilizados para representar diferentes tipos de números e suas propriedades.
-
-\subsection{Conjunto dos Números Naturais ($\mathbb{N}$)}
+\subsection{Conjunto dos Números Naturais (\texorpdfstring{$\mathbb{N}$}{N})}
 
 O conjunto dos números naturais é representado pelo símbolo $\mathbb{N}$ e é composto pelos números inteiros não negativos, ou seja, os números 0, 1, 2, 3, ... O conjunto dos números naturais é utilizado para contar objetos e representar quantidades.
 
-\subsection{Conjunto dos Números Inteiros ($\mathbb{Z}$)}
+\subsection{Conjunto dos Números Inteiros (\texorpdfstring{$\mathbb{Z}$}{Z})}
 
 O conjunto dos números inteiros é representado pelo símbolo $\mathbb{Z}$ e é composto pelos números naturais, seus opostos negativos e o número zero. Ou seja, o conjunto dos números inteiros inclui os números ..., -3, -2, -1, 0, 1, 2, 3, ...
 
-\subsection{Conjunto dos Números Racionais ($\mathbb{Q}$)}
+\subsection{Conjunto dos Números Racionais (\texorpdfstring{$\mathbb{Q}$}{Q})}
 
 O conjunto dos números racionais é representado pelo símbolo $\mathbb{Q}$ e é composto por todos os números que podem ser expressos na forma de fração, onde o numerador e o denominador são números inteiros e o denominador é diferente de zero. Por exemplo, $\frac{1}{2}$, $\frac{3}{4}$, $\frac{-5}{2}$ são números racionais. Além disso, os números inteiros também são considerados números racionais, pois podem ser expressos como frações com denominador igual a 1.
 
-\subsection{Conjunto dos Números Irracionais ($\mathbb{I}$)}
+\subsection{Conjunto dos Números Irracionais (\texorpdfstring{$\mathbb{I}$}{I})}
 
 O conjunto dos números irracionais é representado pelo símbolo $\mathbb{I}$ e é composto por todos os números que não podem ser expressos na forma de fração. Esses números têm infinitas casas decimais não periódicas. Exemplos de números irracionais são $\pi$, $\sqrt{2}$, $\sqrt{3}$.
 
-\subsection{Conjunto dos Números Reais ($\mathbb{R}$)}
+\subsection{Conjunto dos Números Reais (\texorpdfstring{$\mathbb{R}$}{R})}
 
 O conjunto dos números reais é representado pelo símbolo $\mathbb{R}$ e é a união dos conjuntos dos números racionais e irracionais. Ou seja, o conjunto dos números reais inclui todos os números que podem ser expressos como frações e todos os números que não podem ser expressos como frações. O conjunto dos números reais é utilizado para representar quantidades contínuas, como medidas, valores monetários, entre outros.
-
-Esses são os conjuntos numéricos mais comuns utilizados em pré-cálculo. Cada conjunto possui propriedades e características específicas que serão exploradas ao longo do curso. É importante compreender esses conjuntos e suas relações para o estudo de pré-cálculo e cálculo.
 
 % New Section
 
 \subsection{Denominação de Intervalos Numéricos}
 
-Nesta seção, vamos explorar a denominação de intervalos numéricos, que são conjuntos de números reais que estão entre dois valores específicos. A denominação de intervalos é útil para descrever conjuntos contínuos de números e representar intervalos de valores em problemas matemáticos.
+Intervalos numéricos são conjuntos de números reais que estão entre dois valores específicos. A denominação de intervalos é útil para descrever conjuntos contínuos de números e representar intervalos de valores em problemas matemáticos.
 
 Um intervalo numérico é denotado por um par de valores separados por um símbolo especial. Existem diferentes tipos de intervalos, dependendo das propriedades dos valores incluídos no intervalo.
 
+\pagebreak
 \subsubsection{Intervalo Fechado}
 
 Um intervalo fechado inclui todos os números reais entre dois valores específicos, incluindo os próprios valores. É denotado pelo símbolo $[a, b]$, onde $a$ e $b$ são os valores extremos do intervalo. Por exemplo, o intervalo fechado $[2, 5]$ inclui todos os números reais de 2 a 5, incluindo 2 e 5.
 
 \subsubsection{Intervalo Aberto}
 
-Um intervalo aberto inclui todos os números reais entre dois valores específicos, excluindo os próprios valores. É denotado pelo símbolo $(a, b)$, onde $a$ e $b$ são os valores extremos do intervalo. Por exemplo, o intervalo aberto $(2, 5)$ inclui todos os números reais entre 2 e 5, excluindo 2 e 5.
+Um intervalo aberto inclui todos os números reais entre dois valores específicos, excluindo os próprios valores. É denotado pelo símbolo $(a, b)$ ou $]a, b[$, onde $a$ e $b$ são os valores extremos do intervalo. Por exemplo, o intervalo aberto $(2, 5)$ inclui todos os números reais entre 2 e 5, excluindo 2 e 5.
 
 \subsubsection{Intervalo Semiaberto}
 
@@ -133,23 +134,127 @@ Um intervalo infinito à direita é denotado pelo símbolo $(a, \infty)$, onde $
     \item \textbf{Intervalo infinito à direita}: $(a, \infty) = \{x \in \mathbb{R} \,|\, x > a\}$
 \end{itemize}
 
+\subsubsection{Exemplos de Intervalos Numéricos}
+Os extremos do intervalo $]-1, 2]$ são os pontos $-1\text{ e }2$, e todo $x\text{ com }-1 < x < 2$ é ponto interior do intervalo.
+A representação desse intervalo na reta é: \\
+\begin{center}
+    \begin{tikzpicture}
+        \draw[->] (-3,0) -- (3,0) node[right] {$\mathbb{R}$};
+        \draw[blue, thick] (-1,0) -- (2,0);
+        \draw[fill=white] (-1,0) circle [radius=2pt];
+        \draw[fill=blue] (2,0) circle [radius=2pt];
+        \draw (-1,-0.5) node {$-1$};
+        \draw (2,-0.5) node {$2$};
+    \end{tikzpicture}
+\end{center}
+
+\noindent
+O conjunto marcado abaixo representa $]0, 3] \cup  [5, +\infty[$, que é a união de dois intervalos, mas não um intervalo. \\
+\begin{center}
+    \begin{tikzpicture}
+        \draw[->] (-2,0) -- (7,0) node[right] {$\mathbb{R}$};
+        \draw[blue, thick] (0,0) -- (3,0);
+        \draw[blue, thick] (5,0) -- (7,0);
+        \draw[fill=white] (0,0) circle [radius=2pt];
+        \draw[fill=blue] (3,0) circle [radius=2pt];
+        \draw[fill=blue] (5,0) circle [radius=2pt];
+        \draw (0,-0.5) node {$0$};
+        \draw (3,-0.5) node {$3$};
+        \draw (5,-0.5) node {$5$};
+    \end{tikzpicture}
+\end{center}
+
 % New Section
 
 \section{Generalidades de Funções}
 
-Nesta seção, vamos explorar as generalidades de funções, incluindo o domínio, a imagem, o gráfico, as raízes e os sinais.
+Sejam $A \text{ e } B$ conjuntos não vazios. Uma função de $A$ em $B$ é uma regra que associa a cada elemento $x \in A$ um único elemento $y \in B$.
+Se $f$ é o nome da função, então escreve-se $y = f (x)$ para indicar o elemento $y$ de $B$ associado ao elemento $x \in A$.
+
+A notações $f:A \rightarrow B$ e $A \overset{f}{\rightarrow} B$ indicam uma função, de $A$ em $B$, chamada $f$.
+
 
 \subsection{Domínio}
 
-O domínio de uma função é o conjunto de todos os valores de entrada para os quais a função está definida. Em outras palavras, é o conjunto de valores de $x$ para os quais a função $f(x)$ produz um valor válido. O domínio é geralmente expresso como um intervalo ou uma combinação de intervalos.
+O domínio de uma função é o conjunto de todos os valores de entrada para os quais a função está definida. Em outras palavras, é o conjunto de valores de $x$ para os quais a função $f(x)$ produz um valor válido.
+O domínio é geralmente expresso como um intervalo ou uma combinação de intervalos.
+
+O conjunto $A$ é chamado de domínio de $f$ e indicado por $Dom(f)$ ou por $D(f)$.
+O conjunto $B$ é o \textit{contra-domínio} de $f$ e pode ser indicado por $CDom(f)$ ou por $CD(f)$.
+
+Duas funções $f$ e $g$ são iguais se, e somente se, possuírem o mesmo domínio, o mesmo contra-domínio e $f(x) = g(x)$, para todo $x \in Dom(f) = Dom(g)$.
 
 \subsection{Imagem}
 
-A imagem de uma função é o conjunto de todos os valores de saída que a função pode assumir. Em outras palavras, é o conjunto de valores de $y$ que a função $f(x)$ pode assumir para diferentes valores de $x$. A imagem é geralmente expressa como um intervalo ou uma combinação de intervalos.
+A imagem de uma função é o conjunto de todos os valores de saída que a função pode assumir. Em outras palavras, é o conjunto de valores de $y$ que a função $f(x)$ pode assumir para diferentes valores de $x$.
+A imagem é geralmente expressa como um intervalo ou uma combinação de intervalos.
+
+A imagem de $f$, denotada por $Im(f)$, por $f[A]$, ou por $f(A)$, é o seguinte subconjunto do contra-domínio: $Im(f) = \{f(x) \,|\, x \in A\} = \{y \in B \,|\, y = f(x) \text{ para algum } x \in A\}$.
+
+\pagebreak
+\subsubsection{Exemplo}
+\begin{center}
+    \begin{tikzpicture}
+        \draw[black, thick] (0,0) ellipse (2cm and 3cm);
+        \draw[black, thick] (6,0) ellipse (2cm and 3cm);
+        \draw[->, bend left] (2,3) to node[above] {$f$} (4,3);
+        \draw[-, red, bend left] (-0.75,2) to (5,2); % 1
+        \draw[-, red, bend right] (-0.25,1) to (5,2); % 2 
+        \draw[-, red, bend right] (0.75,0) to (5,-1); % 3
+        \draw[-, red, bend right] (0.25,-1) to (5.5,0); % 4
+        \draw[-, red, bend right] (-0.5,-2) to (5.5,-2); %-7
+        
+        % A
+        \node at (0,3.5) {$A$};
+        \node at (6,3.5) {$B$};
+        \node at (-1,2) {$1$};
+        \node at (-0.5,1) {$2$};
+        \node at (0.5,0) {$3$};
+        \node at (0,-1) {$4$};
+        \node at (-1,-2) {$-7$};
+
+        % B
+        \node at (5.5,2) {$-3$};
+        \node at (6.5,1) {$\mathbf{2}$};
+        \node at (6,0) {$1$};
+        \node at (5.5,-1) {$4$};
+        \node at (6,-2) {$d$};
+        \node at (6.5,-2.5) {$\mathbf{c}$};
+    \end{tikzpicture}
+\end{center}
+
+
+Neste caso $Dom(f) = A = \{-7, 1, 2, 3, 4\}$, contra-domínio de $f$ é o conjunto $B = \{-3, 1, 2, 4, c, d\}$ e $Im(f) = \{-3, 1, 4, d\}$. Note que:
+\begin{itemize}
+    \item $B \neq Im(f)$
+    \item $-3 \in B$ é a imagem dos pontos 1 e 2 de A, isto é $f(1) = f(2) = -3$
+    \item $1 \in B$ é a imagem do ponto 4 de A, isto é $f(4) = 1$
+    \item $4 \in B$ é a imagem do ponto 3 de A, isto é $f(3) = 4$
+    \item $d \in B$ é a imagem do ponto -7 de A, isto é $f(-7) = d$
+    \item Os elementos $2$ e $c$ de $B$ não são imagens de nenhum ponto de $A$.
+    \item $f^{-1}(-3) = \{1, 2\}$, $f^{-1}(1) = \{4\}$, $f^{-1}(2) = \emptyset$, $f^{-1}(4) = \{3\}$, $f^{-1}(c) = \emptyset$, $f^{-1}(d) = \{-7\}$.
+\end{itemize}
+
+Uma função também pode ser especificada via uma tabela. Para a função desse exemplo teríamos:
+\\
+\begin{center}
+    \begin{tabular}{|c|c|}
+        \hline
+        $x$             &          $f(x)$ \\
+        \hline
+                  $-7$  &  $\phantom{-}d$ \\
+        $\phantom{-}1$  &            $-3$ \\
+        $\phantom{-}2$  &            $-3$ \\
+        $\phantom{-}3$  &  $\phantom{-}4$ \\
+        $\phantom{-}4$  &  $\phantom{-}1$ \\
+        \hline
+    \end{tabular}
+\end{center}
 
 \subsection{Gráfico}
 
-O gráfico de uma função é uma representação visual da relação entre os valores de entrada e os valores de saída da função. É uma representação bidimensional que mostra como os valores de $x$ se relacionam com os valores de $y$ da função. O gráfico pode ser plotado em um sistema de coordenadas cartesianas, onde o eixo horizontal representa os valores de $x$ e o eixo vertical representa os valores de $y$.
+O gráfico de uma função é uma representação visual da relação entre os valores de entrada e os valores de saída da função. É uma representação bidimensional que mostra como os valores de $x$ se relacionam com os valores de $y$ da função.
+O gráfico pode ser plotado em um sistema de coordenadas cartesianas, onde o eixo horizontal representa os valores de $x$ e o eixo vertical representa os valores de $y$.
 
 \subsection{Raízes}
 
