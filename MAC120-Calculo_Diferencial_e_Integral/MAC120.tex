@@ -251,20 +251,130 @@ Uma função também pode ser especificada via uma tabela. Para a função desse
     \end{tabular}
 \end{center}
 
-\subsection{Gráfico}
+\subsection{Gráfico e raízes}
 
 O gráfico de uma função é uma representação visual da relação entre os valores de entrada e os valores de saída da função. É uma representação bidimensional que mostra como os valores de $x$ se relacionam com os valores de $y$ da função.
-O gráfico pode ser plotado em um sistema de coordenadas cartesianas, onde o eixo horizontal representa os valores de $x$ e o eixo vertical representa os valores de $y$.
+O gráfico pode ser plotado em um sistema de coordenadas cartesianas, onde o eixo horizontal representa os valores de $x$  (abscissa) e o eixo vertical representa os valores de $y$ (ordenada).
 
-\subsection{Raízes}
+O gráfico da função $f: A \rightarrow B$ é o conjunto $G(f) = \{(x, f(x)) \,|\, x \in A\}$.
+Um ponto $P = (a, b)$ está no gráfico de $f$ se, e somente, se $a \in Dom(f)$ e $b = f(a)$.
 
 As raízes de uma função são os valores de $x$ para os quais a função $f(x)$ é igual a zero. Em outras palavras, são os valores de entrada que fazem com que a função se anule. As raízes podem ser encontradas resolvendo a equação $f(x) = 0$.
 
+\subsubsection{Gráfico da Função}
+Considere uma função da forma $f(x)=ax+b$. O gráfico dessa função é uma reta, que pode ter diferentes inclinações e interceptações dependendo dos valores dos coeficientes $a$ e $b$.
+
+Ex.:
+    \begin{itemize}
+        \item $f(x) = 2x + 1$ é uma reta com inclinação positiva ($a > 0$) e interceptação no eixo $y$ em $y = 1$.
+        \item $f(x) = -2x + 1$ é uma reta com inclinação negativa ($a < 0$) e interceptação no eixo $y$ em $y = 1$.
+    \end{itemize}
+
+    \begin{center}
+        \begin{tikzpicture}
+            \draw[->] (-3,0) -- (3,0) node[right] {$x$};
+            \draw[->] (0,-3) -- (0,3) node[above] {$y$};
+            
+            % Reta com inclinação positiva
+            \draw[blue, thick] (-1,-1) -- (1,3) node[above right] {$f(x) = 2x + 1$};
+
+            % Reta com inclinação negativa
+            \draw[red, thick] (-1,3) -- (1,-1) node[above right] {$f(x) = -2x + 1$};
+        \end{tikzpicture}
+    \end{center}
+
+\pagebreak
+Considere uma função da forma $f(x)=ax^2+bx+c$. O gráfico dessa função é uma parábola, que pode ter diferentes formatos dependendo dos valores dos coeficientes $a$, $b$ e $c$.
+
+Ex.:
+    \begin{itemize}
+        \item $f(x) = (x - 2)^2$ é uma parábola com concavidade para cima ($a > 0$) e uma raíz real em $x = 2$ ($\Delta = 0$).
+        \item $g(x) = x^2 - 5x + 6$ é uma parábola com concavidade para cima ($a > 0$) e raízes em $x = 2$ e $x = 3$ ($\Delta > 0$).
+        \item $h(x) = x^2 - 4x + 6$ é uma parábola com concavidade para cima ($a > 0$) e sem raízes reais ($\Delta < 0$).
+    \end{itemize}
+
+    \begin{center}
+        \begin{tikzpicture}[scale=0.6]
+            \draw[->] (-4,0) -- (4,0) node[right] {$x$};
+            \draw[->] (0,-4) -- (0,4) node[above] {$y$};
+
+            % Parábola com concavidade para cima e uma raíz
+            \draw[blue, thick] plot[domain=0:4, samples=100] (\x, {(\x - 2)^2}) node[below right] {$f(x) = (x - 2)^2$};
+
+            % Parábola com concavidade para cima e duas raízes
+            \draw[red, thick] plot[domain=0:4, samples=100] (\x, {(\x)^2 - 5*\x + 6}) node[below right] {$g(x) = x^2 - 5x + 6$};
+
+            % Parábola com concavidade para cima e sem raízes reais
+            \draw[green, thick] plot[domain=0:4, samples=100] (\x, {(\x)^2 - 4*\x + 6}) node[below right] {$h(x) = x^2 - 4x + 6$};
+
+            % Interceptação com eixo x
+            \draw[black, dashed] (2,0) -- (2,-0.2);
+            \draw[black, dashed] (3,0) -- (3,-0.2);
+        \end{tikzpicture}
+    \end{center}
+
+    Obs.: Caso o coeficiente $a$ seja negativo ($a < 0$), a parábola terá concavidade para baixo.
+    \begin{center}
+        \begin{tikzpicture}[scale=0.6]
+            \draw[->] (-4,0) -- (4,0) node[right] {$x$};
+            \draw[->] (0,-4) -- (0,4) node[above] {$y$};
+            
+            % Parábola com concavidade para baixo
+            \draw[blue, thick] plot[domain=0:4, samples=100] (\x, {-(\x - 2)^2}) node[below right] {$f(x) = -(x - 2)^2$};
+            \draw[black, dashed] (2,0) -- (2,-0.2);
+        \end{tikzpicture}
+    \end{center}
+
+
+\pagebreak
 \subsection{Sinais}
 
-Os sinais de uma função são os valores de $y$ que a função $f(x)$ pode assumir para diferentes valores de $x$. Os sinais podem ser positivos, negativos ou zero, dependendo do valor da função para um determinado valor de $x$. Os sinais podem ser determinados analisando o gráfico da função ou avaliando a função para diferentes valores de $x$.
+Os sinais de uma função são os valores de $y$ que a função $f(x)$ pode assumir para diferentes valores de $x$. Os sinais podem ser positivos, negativos ou zero, dependendo do valor da função para um determinado valor de $x$.
+Os sinais podem ser determinados analisando o gráfico da função ou avaliando a função para diferentes valores de $x$.
 
-Essas são algumas das generalidades de funções que são importantes para entender o comportamento e as propriedades das funções. Ao estudar uma função específica, é importante analisar seu domínio, sua imagem, seu gráfico, suas raízes e seus sinais para obter uma compreensão completa da função
+Se $f(\alpha) > 0$, então dizemos que $f$ tem sinal positivo em $\alpha$ e, se $f(\alpha) < 0$, então dizemos que $f$ tem sinal negativo em $\alpha$. Dizemos que $f$ tem sinal positivo no intervalo $I$, se $f(\alpha)$ for positivo, para todo $\alpha$ em $I$.
+Dizemos que $f$ tem sinal negativo no intervalo $I$, se $f(\alpha)$ for negativo, para todo $\alpha$ em $I$.
+
+    \begin{center}
+        \begin{tikzpicture}
+            \draw[->] (-4,0) -- (4,0) node[right] {$x$};
+                        
+            % Função
+            \draw[red, thick, domain=-4:4, samples=100] plot (\x, {sin(\x r)}) node[below left] {$f$};
+
+            % Pontos de interceptação com o eixo x
+            \draw[fill=black] (-3.14,0) circle [radius=2pt] node[above] {$a$};
+            \draw[fill=black] (0,0) circle [radius=2pt] node[above] {$b$};
+            \draw[fill=black] (3.14,0) circle [radius=2pt] node[above] {$c$};
+            
+            % Pontos de máximo e mínimo local
+            \draw[fill=black] (-1.57,-1) circle [radius=1pt] node[below]{$\alpha$};
+            \draw[fill=black] (1.57,1) circle [radius=1pt] node[above]{$\beta$};
+            
+            % Linha tracejada conectando os pontos com o eixo x
+            \draw[dashed] (-1.57,0) -- (-1.57,-1);
+            \draw[dashed] (1.57,0) -- (1.57,1);
+            
+            % Sinais da função
+            \draw (-3.5,0.5) node[below left] {$+$};
+
+            \draw (-2.5,-0.5) node[right] {$-$};
+            \draw (-0.5,-0.5) node[left] {$-$};
+
+            \draw (0.5,0.5) node[right] {$+$};
+            \draw (2.5,0.5) node[left] {$+$};
+
+            \draw (3.5,-0.5) node[above right] {$-$};
+            
+        \end{tikzpicture}
+    \end{center}
+
+\subsection{Retas}
+\subsubsection{Coeficiente angular}
+O coeficiente angular de uma reta é uma medida da inclinação da reta em relação ao eixo horizontal. Ele é calculado como a razão entre a variação da coordenada $y$ e a variação da coordenada $x$ entre dois pontos da reta.
+
+\subsubsection{Equação da reta}
+A equação da reta é uma expressão matemática que descreve a relação entre as coordenadas $x$ e $y$ de pontos pertencentes à reta. A equação da reta pode ser escrita na forma $y = mx + b$, onde $m$ é o coeficiente angular da reta e $b$ é o coeficiente linear.
 
 % New Section
 
