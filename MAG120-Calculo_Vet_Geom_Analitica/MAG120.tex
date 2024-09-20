@@ -676,6 +676,7 @@ Nesse caso, a solução será:
 x = 1, \quad y = 3, \quad z = 2
 \]
 
+\pagebreak
 \section{Semana 4 - Segmentos orientados e vetores}
 \subsection{Segmentos orientados}
 \subsubsection{O que são vetores e segmentos orientados?}
@@ -719,59 +720,97 @@ Os vetores são representados por letras minúsculas em negrito, como $\mathbf{v
 \subsubsection{Operações com vetores}
 \begin{enumerate}
     \item \textbf{Soma de vetores}: a soma de vetores é realizada pela regra do paralelogramo, ou seja, a soma de dois vetores é um vetor que possui a mesma direção e sentido da diagonal do paralelogramo formado pelos vetores. \\
-    Ex.: Dado dois vetores $\overrightarrow{v}$ e $\overrightarrow{u}$ pelos seus representantes, considere um ponto qualquer A e os pontos $B=A+\overrightarrow{u} \text{ e } C=A+\overrightarrow{v}$.
-    
-    Por definição, o vetor $\overrightarrow{w} = \overrightarrow{AD} = (D-A) \rightarrow \overrightarrow{w} = \overrightarrow{u}+\overrightarrow{v}$
-    
-    \usetikzlibrary{calc}
-    \begin{tikzpicture}
-        \coordinate (A) at (0,0);
-        \coordinate (B) at (2,0);
-        \coordinate (C) at (1,2);
-        \coordinate (D) at (3,2);
+        Ex.: Dado dois vetores $\overrightarrow{v}$ e $\overrightarrow{u}$ pelos seus representantes, considere um ponto qualquer A e os pontos $B=A+\overrightarrow{u} \text{ e } C=A+\overrightarrow{v}$.
+                        
+        Por definição, o vetor $\overrightarrow{w} = \overrightarrow{AD} = (D-A) \rightarrow \overrightarrow{w} = \overrightarrow{u}+\overrightarrow{v}$
+                        
+        \usetikzlibrary{calc}
+        \begin{center}
+            \begin{tikzpicture}
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (2,0);
+                \coordinate (C) at (1,2);
+                \coordinate (D) at (3,2);
 
-        \draw[->] (A) -- (B) node[midway, below] {$\overrightarrow{u}$};
-        \draw[->] (A) -- (C) node[midway, left] {$\overrightarrow{v}$};
-        \draw[->, red] (A) -- (D) node[midway, above] {$\overrightarrow{w}$};
-
-        \draw[dashed] (B) -- (D);
-        \draw[dashed] (C) -- (D);
+                \draw[->] (A) -- (B) node[midway, below] {$\overrightarrow{u}$};
+                \draw[->] (A) -- (C) node[midway, left] {$\overrightarrow{v}$};
+                \draw[->, red] (A) -- (D) node[midway, above right] {$\overrightarrow{w}$};
         
-        \node[below left] at (A) {A};
-        \node[below right] at (B) {B};
-        \node[above left] at (C) {C};
-        \node[above right] at (D) {D};
-    \end{tikzpicture} \hfill
-    \begin{tikzpicture}[scale=0.8]
-        \coordinate (O) at (0,0);
-        \coordinate (U) at (4,0);
-        \coordinate (V) at (0,4);
-        \coordinate (UplusV) at ($(U)+(V)$);
-        \coordinate (UminusV) at ($(U)-(V)$);
-        \coordinate (minusUplusV) at (-4,4);
-        \coordinate (minusUminusV) at (-4,-4);
+                \draw[dashed] (B) -- (D);
+                \draw[dashed] (C) -- (D);
+                
+                \node[below left] at (A) {A};
+                \node[below right] at (B) {B};
+                \node[above left] at (C) {C};
+                \node[above right] at (D) {D};
+            \end{tikzpicture} \hfill
+            \begin{tikzpicture}[scale=0.8]
+                \coordinate (O) at (0,0);
+                \coordinate (U) at (4,0);
+                \coordinate (V) at (0,4);
+                \coordinate (UplusV) at ($(U)+(V)$);
+                \coordinate (UminusV) at ($(U)-(V)$);
+                \coordinate (minusUplusV) at (-4,4);
+                \coordinate (minusUminusV) at (-4,-4);
+                
+                \draw[->] (-4,0) -- (4,0) node[right] {$\overrightarrow{u}$};
+                \draw[->] (0,-4) -- (0,4) node[above] {$\overrightarrow{v}$};
         
-        \draw[->] (-4,0) -- (4,0) node[right] {$\overrightarrow{u}$};
-        \draw[->] (0,-4) -- (0,4) node[above] {$\overrightarrow{v}$};
+                \draw[->, red] (O) -- (UplusV) node[midway, below right] {$\overrightarrow{u} + \overrightarrow{v}$};
+                \draw[->, red] (O) -- (UminusV) node[midway, above right] {$\overrightarrow{u} - \overrightarrow{v}$};
+                \draw[->, red] (O) -- (minusUplusV) node[midway, below left] {$\overrightarrow{{-u}} + \overrightarrow{v}$};
+                \draw[->, red] (O) -- (minusUminusV) node[midway, above left] {$\overrightarrow{{-u}} - \overrightarrow{v}$};
+            \end{tikzpicture}
+        \end{center}
 
-        \draw[->, red] (O) -- (UplusV) node[midway, below right] {$\overrightarrow{u} + \overrightarrow{v}$};
-        \draw[->, red] (O) -- (UminusV) node[midway, above right] {$\overrightarrow{u} - \overrightarrow{v}$};
-        \draw[->, red] (O) -- (minusUplusV) node[midway, below left] {$\overrightarrow{{-u}} + \overrightarrow{v}$};
-        \draw[->, red] (O) -- (minusUminusV) node[midway, above left] {$\overrightarrow{{-u}} - \overrightarrow{v}$};
-    \end{tikzpicture}
+        \item \textbf{Subtração de vetores}: a subtração de vetores é realizada pela soma do vetor com o vetor oposto, ou seja, a subtração de dois vetores é a soma do vetor com o vetor oposto.
+        \item \textbf{Multiplicação de vetor por um escalar}: a multiplicação de um vetor por um escalar é realizada multiplicando cada componente do vetor pelo escalar.
+        
+        Dado $a \in \mathbb{R}$ e um vetor qualquer $\overrightarrow{v}$, define-se $a \overrightarrow{v}$:
+        \begin{enumerate}[label=\alph*)]
+            \item se $a=0$ ou se $\overrightarrow{v} = \overrightarrow{0}$, então $a \overrightarrow{v} = \overrightarrow{0}$ (Vetor nulo).
+            \item se $a \neq 0$ ou se $\overrightarrow{v} \neq \overrightarrow{0}$, então:
+                \subitem            \textbf{Módulo}: $|a\overrightarrow{v}| = |a||\overrightarrow{v}|$
+                \subitem           \textbf{Direção}: Mesma direção de $\overrightarrow{v}$ ($a\overrightarrow{v} // \overrightarrow{v}$)
+                \subitem           \textbf{Sentido}: Se $a > 0$, mesmo sentido de $\overrightarrow{v}$;
+                \subitem  \phantom{\textbf{Sentido}: }se $a < 0$, sentido oposto de $\overrightarrow{v}$.
+        \end{enumerate}
+        
+        \pagebreak
+        Ex.:
 
-    \item \textbf{Subtração de vetores}: a subtração de vetores é realizada pela soma do vetor com o vetor oposto, ou seja, a subtração de dois vetores é a soma do vetor com o vetor oposto.
-    \item \textbf{Multiplicação de vetor por um escalar}: a multiplicação de um vetor por um escalar é realizada multiplicando cada componente do vetor pelo escalar.
-    
-    Dado $a \in \mathbb{R}$ e um vetor qualquer $\overrightarrow{v}$, define-se $a \overrightarrow{v}$:
-    \begin{enumerate}[label=\alph*)]
-        \item se $a=0$ ou se $\overrightarrow{v} = \overrightarrow{0}$, então $a \overrightarrow{v} = \overrightarrow{0}$ (Vetor nulo).
-        \item se $a \neq 0$ ou se $\overrightarrow{v} \neq \overrightarrow{0}$, então:
-            \subitem            \textbf{Módulo}: $|a\overrightarrow{v}| = |a||\overrightarrow{v}|$
-            \subitem           \textbf{Direção}: Mesma direção de $\overrightarrow{v}$ ($a\overrightarrow{v} // \overrightarrow{v}$)
-            \subitem           \textbf{Sentido}: Se $a > 0$, mesmo sentido de $\overrightarrow{v}$;
-            \subitem \phantom{\textbf{Sentido}: }se $a < 0$, sentido oposto de $\overrightarrow{v}$.
-    \end{enumerate}
+        \begin{center}
+            \begin{tikzpicture}[scale=2]
+                \draw[dashed] (0,-2) -- (0,2);
+                \draw[->] (0,1.6) -- (1,1.6) node[midway, above] {$\overrightarrow{u}$};
+                \draw[->] (0,0.8) -- (2,0.8) node[midway, above] {$2\overrightarrow{u}$};
+                \draw[->] (0,0) -- (-1,0) node[midway, above] {$-\overrightarrow{u}$};
+                \draw[->] (0,-0.8) -- (0.5,-0.8) node[midway, above] {$\frac{1}{2}\overrightarrow{u}$};
+                \draw[->] (0,-1.6) -- (-0.5,-1.6) node[midway, above] {$-\frac{1}{2}\overrightarrow{u}$};
+            \end{tikzpicture}
+        \end{center}
+
+        \item \textbf{Multiplicação de vetor por outro vetor}: $\forall \overrightarrow{u} \text{ e } \overrightarrow{v} \text{ e } \forall \alpha, \beta \in \mathbb{R}$ são válidas as seguintes propriedades:
+        \begin{enumerate}[label=\alph*)]
+            \item $\alpha \beta \overrightarrow{v} = (\alpha\beta)\overrightarrow{v}$                                           \hfill \textbf{Associativa}
+            \item $\alpha (\overrightarrow{u} + \overrightarrow{v}) = \alpha\overrightarrow{u} + \alpha\overrightarrow{v}$      \hfill \textbf{Distributiva à esquerda}
+            \item $(\alpha + \beta) \overrightarrow{u} = \alpha\overrightarrow{u} + \beta\overrightarrow{u}$                    \hfill \textbf{Distributiva à direita}
+            \item $1\overrightarrow{u} = \overrightarrow{u}$                                                                    \hfill \textbf{Elemento neutro da operação}
+        \end{enumerate}
+        \textbf{Versor de um vetor} \\
+        Mesma direção e mesmo sentido de $\overrightarrow{v}$ módulo unitário. \\
+        
+        \begin{center}
+            $\hat{v} = \frac{\overrightarrow{v}}{|\overrightarrow{v}|} = \frac{1}{|\overrightarrow{v}|}\overrightarrow{v}$
+        \end{center}
+        
+        \begin{center}
+            \begin{tikzpicture}
+                \draw[->] (0,1) -- (2,1) node[midway, above] {$\overrightarrow{v}$};
+                \draw[->] (0,0) -- (1,0) node[midway, above] {$\hat{v}$};
+            \end{tikzpicture}
+        \end{center}
+
 \end{enumerate}
 
 \end{document}
