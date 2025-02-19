@@ -2,7 +2,7 @@
 .obsidian/
 
 ## Local files not up to git
-*.pdf
+/*.pdf
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
