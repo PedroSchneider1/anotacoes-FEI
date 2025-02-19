@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"6c103dd37b33aafe","type":"file","file":"Screenshots/mapa png.png","x":-800,"y":-80,"width":1259,"height":854},
+		{"id":"2e32510039048c73","type":"text","text":"- Preciso **reduzir** meu consumo;\n- Não quero que minha família fique **exposta** a falhas elétricas.","x":-540,"y":-320,"width":260,"height":180},
+		{"id":"a75c070ab664fa8e","type":"text","text":"- Colegas com **projetos interessantes**;\n- Preços da conta de luz **subindo**.","x":580,"y":204,"width":250,"height":156},
+		{"id":"0bbb4581dbfbfaaa","type":"text","text":"\n| Tímido e instrospectivo                          | Não usa redes sociais |\n| ------------------------------------------------ | --------------------- |\n| **Pesquisa assuntos similares de seu interesse** |                       |\n","x":-490,"y":480,"width":640,"height":120},
+		{"id":"bd205522533f85ea","type":"text","text":"- **Tecnologia** é o futuro;\n- **Eficiência energética** é o caminho para a sustentabilidade;\n- **Não escuta** familiares.","x":-1160,"y":159,"width":235,"height":247},
+		{"id":"0bd02b32a4cf9ee1","type":"text","text":"- Diminuir o **consumo geral**;\n- Validar seus **projetos pessoais**;\n- Manter-se **atualizado**;\n- **Sustentabilidade**.","x":150,"y":932,"width":250,"height":228},
+		{"id":"c8001f8a4e156a0b","type":"text","text":"- Provar que está **certo** sobre o assunto;\n- Se **comunicar** eficientemente;\n- Demonstrar seu **domínio** do assunto.","x":-740,"y":930,"width":250,"height":230}
+	],
+	"edges":[
+		{"id":"a504233a0c4e8912","fromNode":"2e32510039048c73","fromSide":"right","toNode":"6c103dd37b33aafe","toSide":"top"},
+		{"id":"f1aced5df056a3b9","fromNode":"6c103dd37b33aafe","fromSide":"right","toNode":"a75c070ab664fa8e","toSide":"left"},
+		{"id":"ea07b355e6c38024","fromNode":"6c103dd37b33aafe","fromSide":"left","toNode":"bd205522533f85ea","toSide":"right"},
+		{"id":"4e99cc6c88002ae8","fromNode":"6c103dd37b33aafe","fromSide":"bottom","toNode":"c8001f8a4e156a0b","toSide":"top"},
+		{"id":"fc80a5760b89c6d1","fromNode":"6c103dd37b33aafe","fromSide":"bottom","toNode":"0bd02b32a4cf9ee1","toSide":"top"}
+	]
+}

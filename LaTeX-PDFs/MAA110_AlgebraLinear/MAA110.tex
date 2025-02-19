@@ -1,0 +1,365 @@
+\documentclass[12pt]{article}
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{bm}
+\usepackage[hidelinks]{hyperref} % For linking table of contents
+\usepackage{enumitem} % For custom list labels
+\usepackage{tikz} % To draw planes
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{MAA110 - Álgebra Linear}
+\author{Pedro Schneider}
+\date{1° Semestre de 2025 - 3° Ciclo}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\pagebreak
+
+\section{Cronograma e Notas}
+
+\subsection{Critério de Aproveitamento}
+A média final \textit{MF} é calculada pela fórmula:
+
+\begin{center}
+    \[
+    \bm{MF} = 0.3 \times \frac{(\bm{AT1} + \bm{AT2})}{2} + 0.7 \times \bm{PF}
+    \]
+\end{center}
+
+\noindent
+AT1, AT2 e AT3 - Atividades Avaliativas (avaliação continuada) com as datas pré-estabelecidas no cronograma.
+
+\noindent
+\textbf{OBS.:} SERÃO REALIZADAS TRÊS ATIVIDADES, PORÉM SÓ SERÃO UTILIZADAS AS DUAS MAIORES NOTAS (A MENOR DELAS SERÁ DESCARTADA).
+
+\noindent
+\break \textbf{PF} - Prova final contemplando todo conteúdo do semestre.
+
+\noindent
+A nota da avaliação PF poderá ser substituída pela nota da avaliação PS, caso o aluno não alcance média final maior ou igual a 5,0.
+
+\section{Sistemas Lineares}
+\subsection{Introdução}
+\subsubsection{O que é um sistema linear?}
+É um conjunto de equações lineares, ou seja, um conjunto de equações do tipo $a_1x_1 + a_2x_2 + \ldots + a_nx_n = b$.
+
+Existem três tipos de sistemas lineares:
+\begin{enumerate}
+    \item \textbf{Sistema Possível e Determinado (SPD)}: quando o sistema possui uma única solução.
+    \item \textbf{Sistema Possível e Indeterminado (SPI)}: quando o sistema possui infinitas soluções.
+    \item \textbf{Sistema Impossível (SI)}: quando o sistema não possui solução.
+\end{enumerate}
+
+\subsubsection{Como resolver um sistema linear?}
+Existem diversos métodos para resolver sistemas lineares, como por exemplo:
+\begin{enumerate}
+    \item \textbf{Método de Substituição}: consiste em isolar uma variável em uma equação e substituir nas demais.
+    \item \textbf{Método de Igualdade}: consiste em igualar duas equações e resolver o sistema resultante.
+    \item \textbf{Método de Adição}: consiste em somar ou subtrair duas equações para eliminar uma variável.
+    \item \textbf{Método de Matriz Inversa}: consiste em utilizar a matriz inversa para encontrar a solução do sistema.
+\end{enumerate}
+
+Além desses métodos, é possível matrizes para resolver sistemas lineares utilizando, por exemplo, a \textbf{Regra de Cramer} ou \textbf{escalonamento} (ou \textit{Método de Gauss}).
+
+\subsection{Resolução do sistema linear utilizando a regra de Cramer}
+Para resolver o sistema linear utilizando a regra de Cramer, siga os seguintes passos:
+
+\textbf{1}. Escreva o sistema linear na forma matricial:
+\[
+\begin{pmatrix}
+    1  &  1  &  1 \\
+    1  & -1  & -1 \\
+    2  & -1  &  1
+\end{pmatrix}
+\begin{pmatrix}
+x \\
+y \\
+z
+\end{pmatrix}
+=
+\begin{pmatrix}
+ 6 \\
+-4 \\
+ 1
+\end{pmatrix}
+\]
+
+\textbf{2}. Calcule o determinante da matriz dos coeficientes:
+\[
+\Delta = \begin{vmatrix}
+    1  &  1  &  1 \\
+    1  & -1  & -1 \\
+    2  & -1  &  1
+\end{vmatrix}
+\]
+
+\textbf{3}. Calcule o determinante da matriz obtida substituindo a coluna dos coeficientes de x pela coluna dos termos independentes:
+\[
+\Delta_x = \begin{vmatrix}
+    6  &  1  &  1 \\
+   -4  & -1  & -1 \\
+    1  & -1  &  1
+\end{vmatrix}
+\]
+
+\textbf{4}. Calcule o determinante da matriz obtida substituindo a coluna dos coeficientes de y pela coluna dos termos independentes:
+\[
+\Delta_y = \begin{vmatrix}
+    1  &  6  &  1 \\
+    1  & -4  & -1 \\
+    2  &  1  &  1
+\end{vmatrix}
+\]
+
+\textbf{5}. Calcule o determinante da matriz obtida substituindo a coluna dos coeficientes de z pela coluna dos termos independentes:
+\[
+\Delta_z = \begin{vmatrix}
+    1  &  1  &  6 \\
+    1  & -1  & -4 \\
+    2  & -1  &  1
+\end{vmatrix}
+\]
+
+\textbf{6}. Calcule as soluções do sistema utilizando as fórmulas de Cramer:
+\[
+x = \frac{\Delta_x}{\Delta}, \quad y = \frac{\Delta_y}{\Delta}, \quad z = \frac{\Delta_z}{\Delta}
+\]
+
+Nese caso, a solução será:
+\[
+x = 1, \quad y = 3, \quad z = 2
+\]
+
+\subsection{Resolução do sistema linear utilizando escalonamento}
+Para resolver o sistema linear utilizando escalonamento, siga os seguintes passos:
+
+\textbf{1}. Escreva o sistema linear na forma matricial:
+\[
+\begin{pmatrix}
+    1  &  1  &  1 \\
+    1  & -1  & -1 \\
+    2  & -1  &  1
+\end{pmatrix}
+\begin{pmatrix}
+x \\
+y \\
+z
+\end{pmatrix}
+=
+\begin{pmatrix}
+ 6 \\
+-4 \\
+ 1
+\end{pmatrix}
+\]
+
+\textbf{2}. Realize as operações elementares nas linhas da matriz aumentada até obter uma matriz triangular superior.
+
+\[
+\begin{array}{rrr|l}
+    1  &  \phantom{-}1  &  \phantom{-}1  &  \phantom{-}6 \\
+    1  &            -1  &            -1  &            -4 \\
+    2  &            -1  &  \phantom{-}1  &  \phantom{-}1
+\end{array}
+\]
+
+\textbf{a}. Diminuir a segunda linha pela primeira e a terceira linha por 2 vezes a segunda.
+
+\[
+\begin{array}{rrr|l}
+    1 & \phantom{-}1 & \phantom{-}1 & \phantom{-}6 \\
+    1 &           -1 &           -1 &           -4 \quad \text{L}_2 \leftarrow \phantom{2}\text{L}_2 - \text{L}_1 \\
+    2 &           -1 & \phantom{-}1 & \phantom{-}1 \quad \text{L}_3 \leftarrow 2\text{L}_2 - \text{L}_3
+\end{array}
+\rightarrow
+\begin{array}{rrr|l}
+    1  &  \phantom{-}1  &  \phantom{-}1  &  \phantom{-1}6 \\
+    0  &            -2  &            -2  &            -10 \\
+    0  &            -1  &            -3  &  -\phantom{1}9
+\end{array}
+\]
+
+\textbf{b}. Dividir a segunda linha pela sua metade negativa.
+
+\[
+    \begin{array}{rrr|l}
+        1  &  \phantom{-}1  &  \phantom{-}1  &  \phantom{-1}6 \\
+        0  &            -2  &            -2  &            -10 \quad \text{L}_2 \leftarrow -\frac{\text{L}_2}{2} \\
+        0  &            -1  &            -3  &  -\phantom{1}9
+    \end{array}
+\rightarrow
+\begin{array}{rrr|l}
+    1  &  \phantom{-}1  &  \phantom{-}1  &  \phantom{-}6 \\
+    0  &  \phantom{-}1  &  \phantom{-}1  &  \phantom{-}5 \\
+    0  &            -1  &            -3  &            -9
+\end{array}
+\]
+
+\textbf{c}. Somar a terceira linha com a segunda.
+
+\[
+    \begin{array}{rrr|l}
+        1  &  \phantom{-}1  &  \phantom{-}1  &  \phantom{-}6 \\
+        0  &  \phantom{-}1  &  \phantom{-}1  &  \phantom{-}5 \\
+        0  &            -1  &            -3  &            -9 \quad \text{L}_3 \leftarrow \text{L}_2 + \text{L}_3
+    \end{array}
+\rightarrow
+\begin{array}{rrr|l}
+    1  &  \phantom{-}1  &  \phantom{-}1  &  \phantom{-}6 \\
+    0  &  \phantom{-}1  &  \phantom{-}1  &  \phantom{-}5 \\
+    0  &  \phantom{-}0  &            -2  &            -4
+\end{array}
+\]
+
+\textbf{3}. Reescreva o sistema e encontre as variáveis.
+
+Nesse caso, a solução será:
+\[
+x = 1, \quad y = 3, \quad z = 2
+\]
+
+\pagebreak
+\section{Segmentos orientados e vetores}
+\subsection{Segmentos orientados}
+\subsubsection{O que são vetores e segmentos orientados?}
+Um segmento orientado é um segmento de reta que possui um sentido, ou seja, uma direção.
+Ele é representado por uma reta que possui um ponto de origem e um ponto de destino.
+Considere o segmento orientado AB, onde A é o ponto de origem e B é o ponto de destino. Podemos representar esse segmento como $\overrightarrow{AB}$.
+
+\noindent
+"Você é o capitão de um barco e quer viajar para o sul a 40 nós. Se a corrente marítma está se movendo para nordeste a 16 nós,
+em que direção e magnitude você opera o motor?"
+
+% Plano cartesiano
+\begin{tikzpicture}
+    \draw[->] (-5,0) -- (5,0) node[right] {$L$};
+    \draw[->] (0,-5) -- (0,5) node[above] {$N$};
+    \draw[->] (5,0)  -- (-5,0) node[left]  {$O$};
+    \draw[->] (0,5)  -- (0,-5) node[below] {$S$};
+    \draw[->, blue] (0,0)  -- (-1,1) node[above left] {NO - 16 nós};
+    \draw[->, blue] (0,0)  -- (1,-1) node[below right] {SE - 16 nós};
+    \draw[->, red]  (1,-1) -- (1,-3.5) node[below right] {S - 40 nós};
+    \draw[->]       (0,0)  -- (1,-3.5) node[below left] {$x$};
+\end{tikzpicture};
+
+São características de um segmento orientado:
+\begin{enumerate}
+    \item \textbf{Módulo} (\textit{Tamanho}): é a medida do segmento, ou seja, a distância entre os pontos A e B.
+    \item \textbf{Direção}: é a orientação do segmento, ou seja, o ângulo formado entre o segmento e o eixo x.
+    \item \textbf{Sentido}: é a direção do segmento, ou seja, a orientação do segmento.
+\end{enumerate}
+
+Vetores são segmentos orientados que possuem as mesmas características, ou seja, módulo, direção e sentido.
+
+Em outras palavras, vetores são o \textbf{conjunto de segmentos equipolentes}.
+
+\subsubsection{Notação}
+Os vetores são representados por letras minúsculas em negrito, como $\mathbf{v}$, e são indicados por uma seta sobre a letra, como $\overrightarrow{v}$.
+\[
+\overrightarrow{v} = \overrightarrow{AB} \quad \text{ou na notação de Grassmann} \quad \overrightarrow{v} = \overrightarrow{AB} = (B - A) = (x_2 - x_1, y_2 - y_1)
+\]
+
+\subsubsection{Operações com vetores}
+\begin{enumerate}
+    \item \textbf{Soma de vetores}: a soma de vetores é realizada pela regra do paralelogramo, ou seja, a soma de dois vetores é um vetor que possui a mesma direção e sentido da diagonal do paralelogramo formado pelos vetores. \\
+        Ex.: Dado dois vetores $\overrightarrow{v}$ e $\overrightarrow{u}$ pelos seus representantes, considere um ponto qualquer A e os pontos $B=A+\overrightarrow{u} \text{ e } C=A+\overrightarrow{v}$.
+                        
+        Por definição, o vetor $\overrightarrow{w} = \overrightarrow{AD} = (D-A) \rightarrow \overrightarrow{w} = \overrightarrow{u}+\overrightarrow{v}$
+                        
+        \usetikzlibrary{calc}
+        \begin{center}
+            \begin{tikzpicture}
+                \coordinate (A) at (0,0);
+                \coordinate (B) at (2,0);
+                \coordinate (C) at (1,2);
+                \coordinate (D) at (3,2);
+
+                \draw[->] (A) -- (B) node[midway, below] {$\overrightarrow{u}$};
+                \draw[->] (A) -- (C) node[midway, left] {$\overrightarrow{v}$};
+                \draw[->, red] (A) -- (D) node[midway, above right] {$\overrightarrow{w}$};
+        
+                \draw[dashed] (B) -- (D);
+                \draw[dashed] (C) -- (D);
+                
+                \node[below left] at (A) {A};
+                \node[below right] at (B) {B};
+                \node[above left] at (C) {C};
+                \node[above right] at (D) {D};
+            \end{tikzpicture} \hfill
+            \begin{tikzpicture}[scale=0.8]
+                \coordinate (O) at (0,0);
+                \coordinate (U) at (4,0);
+                \coordinate (V) at (0,4);
+                \coordinate (UplusV) at ($(U)+(V)$);
+                \coordinate (UminusV) at ($(U)-(V)$);
+                \coordinate (minusUplusV) at (-4,4);
+                \coordinate (minusUminusV) at (-4,-4);
+                
+                \draw[->] (-4,0) -- (4,0) node[right] {$\overrightarrow{u}$};
+                \draw[->] (0,-4) -- (0,4) node[above] {$\overrightarrow{v}$};
+        
+                \draw[->, red] (O) -- (UplusV) node[midway, below right] {$\overrightarrow{u} + \overrightarrow{v}$};
+                \draw[->, red] (O) -- (UminusV) node[midway, above right] {$\overrightarrow{u} - \overrightarrow{v}$};
+                \draw[->, red] (O) -- (minusUplusV) node[midway, below left] {$\overrightarrow{{-u}} + \overrightarrow{v}$};
+                \draw[->, red] (O) -- (minusUminusV) node[midway, above left] {$\overrightarrow{{-u}} - \overrightarrow{v}$};
+            \end{tikzpicture}
+        \end{center}
+
+        \item \textbf{Subtração de vetores}: a subtração de vetores é realizada pela soma do vetor com o vetor oposto, ou seja, a subtração de dois vetores é a soma do vetor com o vetor oposto.
+        \item \textbf{Multiplicação de vetor por um escalar}: a multiplicação de um vetor por um escalar é realizada multiplicando cada componente do vetor pelo escalar.
+        
+        Dado $a \in \mathbb{R}$ e um vetor qualquer $\overrightarrow{v}$, define-se $a \overrightarrow{v}$:
+        \begin{enumerate}[label=\alph*)]
+            \item se $a=0$ ou se $\overrightarrow{v} = \overrightarrow{0}$, então $a \overrightarrow{v} = \overrightarrow{0}$ (Vetor nulo).
+            \item se $a \neq 0$ ou se $\overrightarrow{v} \neq \overrightarrow{0}$, então:
+                \subitem            \textbf{Módulo}: $|a\overrightarrow{v}| = |a||\overrightarrow{v}|$
+                \subitem           \textbf{Direção}: Mesma direção de $\overrightarrow{v}$ ($a\overrightarrow{v} // \overrightarrow{v}$)
+                \subitem           \textbf{Sentido}: Se $a > 0$, mesmo sentido de $\overrightarrow{v}$;
+                \subitem  \phantom{\textbf{Sentido}: }se $a < 0$, sentido oposto de $\overrightarrow{v}$.
+        \end{enumerate}
+        
+        \pagebreak
+        Ex.:
+
+        \begin{center}
+            \begin{tikzpicture}[scale=2]
+                \draw[dashed] (0,-2) -- (0,2);
+                \draw[->] (0,1.6) -- (1,1.6) node[midway, above] {$\overrightarrow{u}$};
+                \draw[->] (0,0.8) -- (2,0.8) node[midway, above] {$2\overrightarrow{u}$};
+                \draw[->] (0,0) -- (-1,0) node[midway, above] {$-\overrightarrow{u}$};
+                \draw[->] (0,-0.8) -- (0.5,-0.8) node[midway, above] {$\frac{1}{2}\overrightarrow{u}$};
+                \draw[->] (0,-1.6) -- (-0.5,-1.6) node[midway, above] {$-\frac{1}{2}\overrightarrow{u}$};
+            \end{tikzpicture}
+        \end{center}
+
+        \item \textbf{Multiplicação de vetor por outro vetor}: $\forall \overrightarrow{u} \text{ e } \overrightarrow{v} \text{ e } \forall \alpha, \beta \in \mathbb{R}$ são válidas as seguintes propriedades:
+        \begin{enumerate}[label=\alph*)]
+            \item $\alpha \beta \overrightarrow{v} = (\alpha\beta)\overrightarrow{v}$                                           \hfill \textbf{Associativa}
+            \item $\alpha (\overrightarrow{u} + \overrightarrow{v}) = \alpha\overrightarrow{u} + \alpha\overrightarrow{v}$      \hfill \textbf{Distributiva à esquerda}
+            \item $(\alpha + \beta) \overrightarrow{u} = \alpha\overrightarrow{u} + \beta\overrightarrow{u}$                    \hfill \textbf{Distributiva à direita}
+            \item $1\overrightarrow{u} = \overrightarrow{u}$                                                                    \hfill \textbf{Elemento neutro da operação}
+        \end{enumerate}
+        \textbf{Versor de um vetor} \\
+        Mesma direção e mesmo sentido de $\overrightarrow{v}$ módulo unitário. \\
+        
+        \begin{center}
+            $\hat{v} = \frac{\overrightarrow{v}}{|\overrightarrow{v}|} = \frac{1}{|\overrightarrow{v}|}\overrightarrow{v}$
+        \end{center}
+        
+        \begin{center}
+            \begin{tikzpicture}
+                \draw[->] (0,1) -- (2,1) node[midway, above] {$\overrightarrow{v}$};
+                \draw[->] (0,0) -- (1,0) node[midway, above] {$\hat{v}$};
+            \end{tikzpicture}
+        \end{center}
+
+\end{enumerate}
+
+\end{document}

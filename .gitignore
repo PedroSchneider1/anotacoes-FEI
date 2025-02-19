@@ -1,3 +1,9 @@
+## Obsidian config folder
+.obsidian/
+
+## Local files not up to git
+*.pdf
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
