@@ -8,7 +8,7 @@ O que é design (projeto)?
 - **Síntese de uma intervenção**: planejar e executar uma intervenção na situação atual;
 - **Avaliação da nova situação**: verificar o efeito da intervenção comparando a situação analisada anteriormente com a nova situação, atingida após a intervenção.
 
-![[projetoIHC-A-im1.png]]
+<img src="../../../Screenshots/projetoIHC-A-im1.png"/>
 ### Perspectivas de projeto:
 São formas de interpretar a atividade de projeto (design)
 - **Racionalismo técnico**: Problemas e soluções conhecidos, métodos de solução bem definidos a priori, designer enquadra uma situação num tipo geral de problema cuja forma de solução seja conhecida
@@ -25,7 +25,7 @@ São formas de interpretar a atividade de projeto (design)
 
 - **Engenharia de Usabilidade de Mayhew**
 	 - Ciclo da Engenharia de Usabilidade: perfil do usuário -> análise de tarefas -> características da plataforma -> princípios gerais de projeto - metas de usabilidade -> guia de estilo
-	![[mayhewIHC.png]]
+	<img src="../../../Screenshots/mayhewIHC.png"/>
 
 - **Design Contextual**
 - **Design Baseado em Cenários**

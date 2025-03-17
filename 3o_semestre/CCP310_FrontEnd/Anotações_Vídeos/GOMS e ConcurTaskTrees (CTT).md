@@ -78,7 +78,7 @@ A diferença do CTT para os outros é que ele é o único que nos permite mapear
 
 - **Suspensão/Retomada**: T1| > T2 especifica que T1 pode ser interrompida por T2 e é retomada no ponto em que parou assim que T2 terminar
 
-![[relaçãoCTT.png]]
+<img src="../../../Screenshots/relaçãoCTT.png"/>
 
 ### Exemplo
-![[exCTT.png]]
+<img src="../../../Screenshots/exCTT.png"/>

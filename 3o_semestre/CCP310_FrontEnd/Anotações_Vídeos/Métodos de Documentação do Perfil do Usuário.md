@@ -7,13 +7,13 @@ Podemos agrupar por características semelhantes, por exemplo.
 
 ## Perfil de Usuário Estatístico
 
-![[Pasted image 20250212221713.png]]
+<img src="../../../Screenshots/Pasted image 20250212221713.png"/>
 
 ## Personas
 Uma persona é um personagem fictício, modelo hipotético de um grupo de usuários reais, criado para descrever um usuário típico.
 ### Características de uma Persona
 
-![[Pasted image 20250212222907.png]]
+<img src="../../../Screenshots/Pasted image 20250212222907.png"/>
 
 >Persona **primária**: usuário principal do sistema
 >Persona **secundária**: usuário afetado pelo sistema

@@ -6,7 +6,6 @@ Qualidade de uso em IHC (critérios):
 - acessibilidade
 - comunicabilidade
 
-
 ### Usabilidade: 
 
 ISO/IEC 9126 - (Para qualidade de software)

@@ -1,4 +1,3 @@
-
 Podem auxiliar um projeto de IHC por chamarem atenção e apontarem soluções para problemas comuns na prática. Entretanto, eles jamais devem substituir as atividades de análise, design e avaliação de IHC, pois cada caso de design possui suas particularidades que não podem ser ignoradas.
 
 ### Correspondência com as Expectativas dos Usuários:
