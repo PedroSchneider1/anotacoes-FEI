@@ -1,4 +1,4 @@
-[[CCP310_1 - 06_02_24]]
+[CCP310_1 - 06_02_24](CCP310_1%20-%2006_02_24.md)
 # Interação
 É um processo de **sequência de estímulos e respostas**.
 Numa interação por **operação** de máquina, o usuário formula uma intenção, planeja suas ações, atua sobre a interface, percebe e interpreta a resposta do sistema e avalia se seu objetivo foi alcançado. *(Norman, 1986)*
@@ -8,7 +8,7 @@ Numa interação por **comunicação** com/por meio da máquina é um processo d
 > **Exemplo**: ao entender perfeitamente a comunicação entre A e B, a substituição de A/B por uma máquina se torna possível e desejada.
 ## Perspectivas de Interação
 
-<img src="../../../Screenshots/Pasted image 20250212213816.png"/ width="80%" height="80%" />
+<img src="../../../Screenshots/Pasted image 20250212213816.png" width="80%" height="80%" />
 
 
 | Perspectiva          | Significado de interação                      | Fatores de qualidade mais evidentes                                          |
@@ -32,4 +32,4 @@ Numa interação por **comunicação** com/por meio da máquina é um processo d
 Características de um objeto capazes de **revelar aos seus usuários as operações e manipulações** que eles podem fazer com ele (exemplo: caixa de busca).
 
 # Continuação
-[[Conceitos de IHC - Parte C]]
+[Conceitos de IHC - Parte C](Conceitos%20de%20IHC%20-%20Parte%20C.md)

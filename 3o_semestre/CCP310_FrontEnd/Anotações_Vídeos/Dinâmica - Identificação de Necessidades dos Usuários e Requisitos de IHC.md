@@ -2,11 +2,11 @@
 
 #Link: https://www.youtube.com/watch?v=_KKrtsr58b4 (A)
 ## Quais dados coletar?
-- o próprio [[Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC#Sobre o usuário|usuário]];
-- sua [[Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC#Sobre sua relação com a tecnologia|relação com a tecnologia]];
-- seu [[Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC#Sobre seu conhecimento do domínio|conhecimento de domínio]] do produto;
-- seu [[Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC#Sobre suas tarefas|conhecimento das tarefas]] que deverá realizar;
-- suas [[Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC#Sobre suas motivações e valores|motivações e valores]].
+- o próprio [usuário](#Sobre%20o%20usuário);
+- sua [relação com a tecnologia](#Sobre%20sua%20relação%20com%20a%20tecnologia);
+- seu [conhecimento de domínio](#Sobre%20seu%20conhecimento%20do%20domínio) do produto;
+- seu [conhecimento das tarefas](#Sobre%20suas%20tarefas) que deverá realizar;
+- suas [motivações e valores](#Sobre%20suas%20motivações%20e%20valores).
 ### Sobre o usuário
 - **dados demográficos** (idade, sexo, status socieconômico);
 - **educação** (grau de escolaridade, área de formação, cursos, alfabetismo, etc.);
@@ -52,13 +52,13 @@ Na prática, geralmente:
 #Link: https://www.youtube.com/watch?v=MvrQBGdW0nE (B)
 ## Como coletar dados do usuário?
 > Instrumentos de coleta de dados
-- [[Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC#Entrevista|Entrevistas]];
-- [[Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC#Questionário|Questionários]];
-- [[Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC#Grupo de Foco|Grupos de Foco]];
-- [[Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC#*Brainstorming* de Necessidades e Desejos dos Usuários|Brainstorming de Necessidades e Desejos dos Usuário]];
-- [[Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC#Classificação de Cartões|Classificação de Cartões]];
-- [[Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC#Estudos de Campo|Estudos de Campo]];
-- [[Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC#Investigação Contextual|Investigação Contextual]];
+- [Entrevistas](#Entrevista);
+- [Questionários](#Questionário);
+- [Grupos de Foco](#Grupo%20de%20Foco);
+- [*Brainstorming* de Necessidades e Desejos dos Usuários](#*Brainstorming*%20de%20Necessidades%20e%20Desejos%20dos%20Usuários);
+- [Classificação de Cartões (*Card Sorting*)](#Classificação%20de%20Cartões%20(*Card%20Sorting*));
+- [Estudos de Campo](#Estudos%20de%20Campo);
+- [Investigação Contextual](#Investigação%20Contextual);
 ### Entrevista
 É uma **conversa** guiada por um roteiro de perguntas ou tópicos, na qual um entrevistador busca obter informações de um entrevistado.
 Ela permite coletar muitas informações **detalhadas** e **profundas** de usuário individuais, mais do que questionários e grupos de foco.

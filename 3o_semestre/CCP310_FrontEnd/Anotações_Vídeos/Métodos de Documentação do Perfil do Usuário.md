@@ -1,4 +1,4 @@
-[[CCP310_1 - 06_02_24]]
+[CCP310_1 - 06_02_24](CCP310_1%20-%2006_02_24.md)
 # Perfil do Usuário
 Descrição detalhada das características dos usuários, sua relação com tecnologia, seu conhecimento sobre domínio e tarefas.
 A categorização de usuários em determinados perfis **destaca** algumas características e **abstrai** outras.
@@ -7,13 +7,13 @@ Podemos agrupar por características semelhantes, por exemplo.
 
 ## Perfil de Usuário Estatístico
 
-<img src="../../../Screenshots/Pasted image 20250212221713.png"/ width="80%" height="80%" />
+<img src="../../../Screenshots/Pasted image 20250212221713.png" width="80%" height="80%" />
 
 ## Personas
 Uma persona é um personagem fictício, modelo hipotético de um grupo de usuários reais, criado para descrever um usuário típico.
 ### Características de uma Persona
 
-<img src="../../../Screenshots/Pasted image 20250212222907.png"/ width="80%" height="80%" />
+<img src="../../../Screenshots/Pasted image 20250212222907.png" width="80%" height="80%" />
 
 >Persona **primária**: usuário principal do sistema
 >Persona **secundária**: usuário afetado pelo sistema

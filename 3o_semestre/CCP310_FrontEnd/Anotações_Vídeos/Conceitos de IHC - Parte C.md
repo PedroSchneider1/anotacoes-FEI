@@ -1,4 +1,4 @@
-[[CCP310_1 - 06_02_24]]
+[CCP310_1 - 06_02_24](CCP310_1%20-%2006_02_24.md)
 
 Qualidade de uso em IHC (critérios):
 - usabilidade
