@@ -1,0 +1,232 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1739373724304,
+      "items": [
+        {
+          "type": "group",
+          "ctime": 1739373495147,
+          "items": [
+            {
+              "type": "file",
+              "ctime": 1739373521776,
+              "path": "3o_semestre/CCM310_Arq.Poo/CCM310_3 - 11_02_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1739482766566,
+              "path": "3o_semestre/CCM310_Arq.Poo/CCM310_4 - 18_02_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1740596080925,
+              "path": "3o_semestre/CCM310_Arq.Poo/CCM310_5 - 25_02_24.md"
+            }
+          ],
+          "title": "CCM310"
+        },
+        {
+          "type": "group",
+          "ctime": 1739373503813,
+          "items": [
+            {
+              "type": "file",
+              "ctime": 1739373528461,
+              "path": "3o_semestre/ELD310_Redes/ELD310_3 - 12_02_24.md",
+              "title": ""
+            },
+            {
+              "type": "file",
+              "ctime": 1739386643778,
+              "path": "3o_semestre/ELD310_Redes/ELD310_4 - 17_02_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1740596070225,
+              "path": "3o_semestre/ELD310_Redes/ELD310_5 - 26_02_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1741804748342,
+              "path": "3o_semestre/ELD310_Redes/ELD310_6 - 12_03_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1742410023168,
+              "path": "3o_semestre/ELD310_Redes/ELD310_7 - 19_03_24.md"
+            }
+          ],
+          "title": "ELD310"
+        },
+        {
+          "type": "group",
+          "ctime": 1739482739172,
+          "items": [
+            {
+              "type": "file",
+              "ctime": 1739482749441,
+              "path": "3o_semestre/MAA110_AlgebraLinear/MAA110_1 - 13_02_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1739817218042,
+              "path": "3o_semestre/MAA110_AlgebraLinear/MAA110_2 - 17_02_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1740422151096,
+              "path": "3o_semestre/MAA110_AlgebraLinear/MAA110_3 - 20_02_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1740422180766,
+              "path": "3o_semestre/MAA110_AlgebraLinear/MAA110_4 - 24_02_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1740689016016,
+              "path": "3o_semestre/MAA110_AlgebraLinear/MAA110_5 - 27_02_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1741631612087,
+              "path": "3o_semestre/MAA110_AlgebraLinear/MAA110_6 - 10_03_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1741632061318,
+              "path": "3o_semestre/MAA110_AlgebraLinear/MAA110_7 - 17_03_24.md"
+            }
+          ],
+          "title": "MAA110"
+        },
+        {
+          "type": "group",
+          "ctime": 1739482779028,
+          "items": [
+            {
+              "type": "file",
+              "ctime": 1739482789282,
+              "path": "3o_semestre/CCP310_FrontEnd/CCP310_1 - 06_02_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1739482794783,
+              "path": "3o_semestre/CCP310_FrontEnd/CCP310_2 - 13_02_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1739968462457,
+              "path": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1740672978419,
+              "path": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Princípios e Diretrizes para o Design de IHC.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1740672986758,
+              "path": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Métodos de Documentação do Perfil do Usuário.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1740672995767,
+              "path": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Conceitos de IHC - Parte C.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1740673004672,
+              "path": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Conceitos de IHC - Parte B.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1740673012048,
+              "path": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Conceitos de IHC - Parte A.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1740673020971,
+              "path": "3o_semestre/CCP310_FrontEnd/CCP310_3 - 20_02_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1741714346580,
+              "path": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/GOMS e ConcurTaskTrees (CTT).md"
+            },
+            {
+              "type": "file",
+              "ctime": 1741714355039,
+              "path": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Análise Hierárquica de Tarefas (HTA).md"
+            },
+            {
+              "type": "file",
+              "ctime": 1741872228614,
+              "path": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Processos de Projeto de IHC.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1741891693994,
+              "path": "3o_semestre/CCP310_FrontEnd/CCP310_4 - 27_02_24.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1741891706079,
+              "path": "3o_semestre/CCP310_FrontEnd/CCP310_5 - 06_03_25.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1741891712750,
+              "path": "3o_semestre/CCP310_FrontEnd/CCP310_6 - 13_03_25.md"
+            }
+          ],
+          "title": "CCP310"
+        },
+        {
+          "type": "group",
+          "ctime": 1739985514155,
+          "items": [],
+          "title": "CCM100"
+        },
+        {
+          "type": "folder",
+          "ctime": 1739985529967,
+          "path": "3o_semestre/MAC220_CalcMulti"
+        },
+        {
+          "type": "group",
+          "ctime": 1739985523048,
+          "items": [],
+          "title": "MAC220"
+        },
+        {
+          "type": "folder",
+          "ctime": 1739985546047,
+          "path": "3o_semestre/MAA110_AlgebraLinear"
+        },
+        {
+          "type": "folder",
+          "ctime": 1739985550443,
+          "path": "3o_semestre/ELD310_Redes"
+        },
+        {
+          "type": "folder",
+          "ctime": 1739985554596,
+          "path": "3o_semestre/CCP310_FrontEnd"
+        },
+        {
+          "type": "folder",
+          "ctime": 1739985558765,
+          "path": "3o_semestre/CCM310_Arq.Poo"
+        },
+        {
+          "type": "folder",
+          "ctime": 1739985564280,
+          "path": "3o_semestre/CCM100_Arq.Org.Comp"
+        }
+      ],
+      "title": "3o_Semestre"
+    }
+  ]
+}

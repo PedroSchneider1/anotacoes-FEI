@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "002ff9fc46437b29",
+    "type": "split",
+    "children": [
+      {
+        "id": "024824fcfd977de6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bf5d96854dd8deb8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3o_semestre/ELD310_Redes/ELD310_6 - 12_03_24.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ELD310_6 - 12_03_24"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "51dd89f97154a809",
+    "type": "split",
+    "children": [
+      {
+        "id": "8709049c8148f513",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b1b40584680717e0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "ac5c2afc38b0dce6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "dc262dfa1dc3bd7b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "534a69bf3e22d237",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d70952a9fa17add",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4384386abb719218",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC"
+            }
+          },
+          {
+            "id": "2cc27b5672dc372d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC"
+            }
+          },
+          {
+            "id": "e1b9a337c96098fa",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9a6f2d78c8beff68",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "3o_semestre/ELD310_Redes/ELD310_6 - 12_03_24.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de ELD310_6 - 12_03_24"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "bf5d96854dd8deb8",
+  "lastOpenFiles": [
+    "3o_semestre/ELD310_Redes/ELD310_7 - 19_03_24.md",
+    "3o_semestre/ELD310_Redes/ELD310_8 - **_03_25.md",
+    "3o_semestre/ELD310_Redes/ELD310_6 - 12_03_24.md",
+    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_06.pdf",
+    "Screenshots/exMascaraELD7.png",
+    "Screenshots/mascaraRedeELD7.png",
+    "Screenshots/resumoClassesELD7.png",
+    "Screenshots/classeCELD7.png",
+    "Screenshots/classeBELD7.png",
+    "ELD310_3.md",
+    "Pasted image 20250319162141.png",
+    "Pasted image 20250319162108.png",
+    "Screenshots/classeAELD7.png",
+    "Screenshots/endRedeBroadcastELD7.png",
+    "Screenshots/subredesELD7.png",
+    "3o_semestre/CCP310_FrontEnd/CCP310_2 - 13_02_24.md",
+    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_05.pdf",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_4 - 24_02_24.md",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_3 - 20_02_24.md",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_7 - 17_03_24.md",
+    "3o_semestre/CCP310_FrontEnd/CCP310_1 - 06_02_24.md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Processos de Projeto de IHC.md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Princípios e Diretrizes para o Design de IHC.md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Métodos de Documentação do Perfil do Usuário.md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/GOMS e ConcurTaskTrees (CTT).md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC.md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Conceitos de IHC - Parte C.md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Conceitos de IHC - Parte B.md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Análise Hierárquica de Tarefas (HTA).md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Conceitos de IHC - Parte A.md",
+    "3o_semestre/CCP310_FrontEnd/CCP310_6 - 13_03_25.md",
+    "3o_semestre/CCP310_FrontEnd/CCP310_4 - 27_02_24.md",
+    "3o_semestre/CCM310_Arq.Poo/CCM310_5 - 25_02_24.md",
+    "3o_semestre/CCM310_Arq.Poo/CCM310_4 - 18_02_24.md",
+    "3o_semestre/CCM310_Arq.Poo/CCM310_3 - 11_02_24.md",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_5 - 27_02_24.md",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_2 - 17_02_24.md",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_1 - 13_02_24.md",
+    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_01.pdf",
+    "STPex.canvas",
+    "3o_semestre/CCP310_FrontEnd/Mapa de Empatia.canvas",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos",
+    "Screenshots",
+    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_02.pdf",
+    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_02_v2.pdf",
+    "3o_semestre/ELD310_Redes/PDFs",
+    "Cálculo Vol 1 9Ed - James Stewart, Daniel Clegg, Saleem Watson - Cengage (2022).pdf",
+    "introducao_geogebra.pdf",
+    "3o_semestre/Sem título.canvas"
+  ]
+}

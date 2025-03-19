@@ -8,7 +8,7 @@ Numa interação por **comunicação** com/por meio da máquina é um processo d
 > **Exemplo**: ao entender perfeitamente a comunicação entre A e B, a substituição de A/B por uma máquina se torna possível e desejada.
 ## Perspectivas de Interação
 
-<img src="../../../Screenshots/Pasted image 20250212213816.png"/>
+<img src="../../../Screenshots/Pasted image 20250212213816.png"/ width="80%" height="80%" />
 
 
 | Perspectiva          | Significado de interação                      | Fatores de qualidade mais evidentes                                          |
