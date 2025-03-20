@@ -1,3 +1,11 @@
+# Ignore everything in .obsidian folder by default
+.obsidian/*
+
+# But keep snippets and appearance settings
+!.obsidian/snippets/
+!.obsidian/themes/
+!.obsidian/settings.json
+
 ## Local files not up to git
 Material_extra/
 
