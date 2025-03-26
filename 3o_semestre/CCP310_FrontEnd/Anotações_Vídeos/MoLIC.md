@@ -1,3 +1,5 @@
+#Link: https://www.youtube.com/watch?v=c15Rr3Q-PKw
+
 Pra fazer o Molic (Linguagem de modelação para Interação como conversação), nós precisamos utilizar o Design Centrado na Comunicação, Mapa de Objetivos e o Esquema Conceitual de Signos.
 # Modelagem de Interação
 Molic é uma linguagem para a modelagem da interação humano-computador como uma conversa.
@@ -8,7 +10,7 @@ Os designers devem refletir sobre as seguintes questões:
 - mudanças de tópico relativas a objetivos instrumentais diretos;
 - conversas para a recuperação de rupturas, i.e, mecanismos para os usuários se recuperarem de problemas na comunicação com o preposto do usuário;
 - consistência entre os caminhos de interação semelhantes ou análogos.
-## Construindo um diagrama MoLIC partindo dos objetivos do usuário:
+## Construindo um diagrama MoLIC partindo dos objetivos do usuário
 ### Falas de transição
 Mudanças de tópico em determinados momentos da interação (cenas)
 Eu posso ter diversas cenas em somente uma tela.
