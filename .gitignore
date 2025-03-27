@@ -1,5 +1,7 @@
+## Custom ignores
+
 # Ignore everything in .obsidian folder by default
-.obsidian/*
+.obsidian/
 
 # But keep snippets and appearance settings
 !.obsidian/snippets/
@@ -8,6 +10,8 @@
 
 ## Local files not up to git
 Material_extra/
+
+## LaTeX .gitignore default template
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
