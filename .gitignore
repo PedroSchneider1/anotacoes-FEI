@@ -1,9 +1,10 @@
 ## Custom ignores
 
 # Ignore everything in .obsidian folder by default
-.obsidian/
+.obsidian/*
 
 # But keep snippets and appearance settings
+!.obsidian/
 !.obsidian/snippets/
 !.obsidian/themes/
 !.obsidian/settings.json
