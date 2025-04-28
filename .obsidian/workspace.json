@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6e9faa926e90e284",
+        "id": "77a65cfa8010ea7e",
         "type": "tabs",
         "children": [
           {
-            "id": "f54c125e6af0f936",
+            "id": "59b463203f5467bd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3o_semestre/MAA110_AlgebraLinear/MAA110_8 - 24_03_25.md",
+                "file": "3o_semestre/MAA110_AlgebraLinear/MAA110_12 - 24_04_25.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MAA110_8 - 24_03_25"
+              "title": "MAA110_12 - 24_04_25"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "534a69bf3e22d237",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC.md",
+                "file": "3o_semestre/CCP310_FrontEnd/CCP310_9 - 23_04_25.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC"
+              "title": "Links inversos para CCP310_9 - 23_04_25"
             }
           },
           {
@@ -142,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3o_semestre/MAA110_AlgebraLinear/MAA110_8 - 24_03_25.md",
+                "file": "3o_semestre/MAA110_AlgebraLinear/MAA110_12 - 24_04_25.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de MAA110_8 - 24_03_25"
+              "title": "Sumário de MAA110_12 - 24_04_25"
             }
           }
         ],
@@ -156,7 +157,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,54 +170,54 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "f54c125e6af0f936",
+  "active": "59b463203f5467bd",
   "lastOpenFiles": [
-    "3o_semestre/MAA110_AlgebraLinear/MAA110_7 - 17_03_25.md",
-    "3o_semestre/MAA110_AlgebraLinear/MAA110_8 - 24_03_25.md",
-    "3o_semestre/MAA110_AlgebraLinear/MAA110_9 - 31_03_25.md",
-    "3o_semestre/MAA110_AlgebraLinear/MAA110_10 - 07_04_25.md",
     "3o_semestre/MAA110_AlgebraLinear/MAA110_11 - 14_04_25.md",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_12 - 24_04_25.md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Avaliação Heurística.md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Planejamento da Avaliação de IHC.md",
+    "3o_semestre/CCP310_FrontEnd/CCP310_9 - 23_04_25.md",
+    "Pasted image 20250423225020.png",
+    "Screenshots/PlanejamentoIHC-3.png",
+    "Screenshots/PlanejamentoIHC-2.png",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Processos de Projeto de IHC.md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/GOMS e ConcurTaskTrees (CTT).md",
+    "Screenshots/PlanejamentoIHC-1.png",
+    "3o_semestre/CCP310_FrontEnd/CCP310_8 - 27_03_25.md",
+    "3o_semestre/ELD310_Redes/ELD310_11 - 23_04_25.md",
+    "Screenshots/ELD310_11-12.png",
+    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_08.pdf",
+    "Screenshots/ELD310_11-11.png",
+    "Screenshots/ELD310_11-10.png",
+    "Screenshots/ELD310_11-9.png",
+    "Screenshots/ELD310_11-8.png",
+    "Screenshots/ELD310_11-7.png",
+    "3o_semestre/ELD310_Redes/ELD310_5 - 26_02_25.md",
     "3o_semestre/ELD310_Redes/ELD310_10 - 09_04_25.md",
     "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_07_(2).pdf",
-    "Screenshots/ELD310_10-7.png",
-    "Screenshots/ELD310_10-6.png",
-    "Screenshots/ELD310_10-5.png",
-    "Screenshots/ELD310_10-4.png",
-    "Screenshots/ELD310_10-3.png",
-    "Screenshots/ELD310_10-2.png",
+    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_07_(1).pdf",
+    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_09.pdf",
+    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_10.pdf",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_8 - 24_03_25.md",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_7 - 17_03_25.md",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_9 - 31_03_25.md",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_10 - 07_04_25.md",
     "3o_semestre/ELD310_Redes/ELD310_7 - 19_03_25.md",
     "3o_semestre/ELD310_Redes/ELD310_8 - 26_03_25.md",
     "3o_semestre/ELD310_Redes/ELD310_9 - 02_04_25.md",
-    "Screenshots/ELD310_10-1.png",
-    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_08.pdf",
-    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_09.pdf",
-    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_10.pdf",
-    "Screenshots/MAA110_9-5.png",
-    "Screenshots/MAA110_9-4.png",
-    "Screenshots/MAA110_9-3.png",
     "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/MoLIC.md",
     "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/MoLIC - 2.md",
     "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Conceitos de IHC - Parte B.md",
-    "3o_semestre/CCP310_FrontEnd/CCP310_8 - 27_03_25.md",
     "3o_semestre/CCP310_FrontEnd/CCP310_7 - 20_03_25.md",
     "3o_semestre/CCP310_FrontEnd/CCP310_6 - 13_03_25.md",
     "3o_semestre/CCP310_FrontEnd/CCP310_5 - 06_03_25.md",
     "3o_semestre/CCM100_Arq.Org.Comp/CCM100_7 - 21_03_25.md",
     "3o_semestre/CCM310_Arq.Poo/CCM310_3 - 11_02_25.md",
-    "3o_semestre/ELD310_Redes/ELD310_3 - 12_02_25.md",
-    "3o_semestre/MAA110_AlgebraLinear/MAA110_1 - 13_02_25.md",
-    "3o_semestre/ELD310_Redes/ELD310_6 - 12_03_25.md",
-    "3o_semestre/CCM100_Arq.Org.Comp/CCM100_5 - 07_03_25.md",
     "3o_semestre/CCM100_Arq.Org.Comp/PDFs/06-Desvio_condicional.pdf",
     "3o_semestre/CCM100_Arq.Org.Comp/PDFs/05-Subrotinas_e_interrupção.pdf",
     "3o_semestre/CCM100_Arq.Org.Comp/PDFs/Gabarito-05.pdf",
     "3o_semestre/CCM100_Arq.Org.Comp/PDFs/04-Memoria_e_opcodes.pdf",
-    "3o_semestre/CCM100_Arq.Org.Comp/CCM100_4 - 28_02_25.md",
-    "3o_semestre/CCM100_Arq.Org.Comp/CCM100_2 - 14_02_25.md",
-    "3o_semestre/CCM100_Arq.Org.Comp/CCM100_3 - 21_02_25.md",
     "3o_semestre/CCM100_Arq.Org.Comp/PDFs/03-Instrucoes_asm.pdf",
-    "3o_semestre/CCM100_Arq.Org.Comp/CCM100_1 - 07_02_25.md",
-    "3o_semestre/CCM100_Arq.Org.Comp/PDFs/02-Logica_sequencial.pdf",
     "STPex.canvas",
     "3o_semestre/CCP310_FrontEnd/Mapa de Empatia.canvas",
     "3o_semestre/Sem título.canvas"
