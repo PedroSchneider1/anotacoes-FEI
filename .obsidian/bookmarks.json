@@ -125,6 +125,11 @@
               "type": "file",
               "ctime": 1746643455882,
               "path": "3o_semestre/ELD310_Redes/ELD310_13 - 07_05_25.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1747248716131,
+              "path": "3o_semestre/ELD310_Redes/ELD310_14 - 14_05_25.md"
             }
           ],
           "title": "ELD310"
@@ -236,12 +241,17 @@
             {
               "type": "file",
               "ctime": 1745865564872,
-              "path": "3o_semestre/MAA110_AlgebraLinear/MAA110_13 - 28_04_25.md"
+              "path": "3o_semestre/MAA110_AlgebraLinear/MAA110_13 - 27_04_25.md"
             },
             {
               "type": "file",
               "ctime": 1746470547839,
-              "path": "3o_semestre/MAA110_AlgebraLinear/MAA110_14 - 05_05_25.md"
+              "path": "3o_semestre/MAA110_AlgebraLinear/MAA110_14 - 03_05_25.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1744301110678,
+              "path": "3o_semestre/MAA110_AlgebraLinear/MAA110_15 - 10_05_25.md"
             }
           ],
           "title": "MAA110"
@@ -318,6 +328,11 @@
                   "type": "file",
                   "ctime": 1745459490532,
                   "path": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Avaliação Heurística.md"
+                },
+                {
+                  "type": "file",
+                  "ctime": 1747322891943,
+                  "path": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Método de Avaliação de Usabilidade por Observação do Usuário.md"
                 }
               ],
               "title": "Vídeos"
@@ -386,6 +401,11 @@
               "type": "file",
               "ctime": 1745456803051,
               "path": "3o_semestre/CCP310_FrontEnd/CCP310_9 - 23_04_25.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1747322837339,
+              "path": "3o_semestre/CCP310_FrontEnd/CCP310_10 - 15_05_25.md"
             }
           ],
           "title": "CCP310"
