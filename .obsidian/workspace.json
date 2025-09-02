@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "77a65cfa8010ea7e",
+        "id": "b82e591115f06e12",
         "type": "tabs",
         "children": [
           {
-            "id": "59b463203f5467bd",
+            "id": "e228df57fdf93d28",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Conceitos de IHC - Parte B.md",
+                "file": "4o_semestre/MAC440_Eq.Dif.Series/MAC440-29_08_25.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Conceitos de IHC - Parte B"
+              "title": "MAC440-29_08_25"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "affor",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Marcadores"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -143,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Conceitos de IHC - Parte B.md",
+                "file": "4o_semestre/MAC440_Eq.Dif.Series/MAC440-29_08_25.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Conceitos de IHC - Parte B"
+              "title": "Sumário de MAC440-29_08_25"
             }
           }
         ],
@@ -161,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Criar nova base": false,
       "switcher:Abrir a troca rápida": false,
       "graph:Abrir visualização em gráfico": false,
       "canvas:Criar novo canvas": false,
@@ -169,55 +169,56 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "59b463203f5467bd",
+  "active": "e228df57fdf93d28",
   "lastOpenFiles": [
-    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Dinâmica - Identificação de Necessidades dos Usuários e Requisitos de IHC.md",
-    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/GOMS e ConcurTaskTrees (CTT).md",
-    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Método de Avaliação de Usabilidade por Observação do Usuário.md",
-    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Métodos de Documentação do Perfil do Usuário.md",
-    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Processos de Projeto de IHC.md",
-    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Princípios e Diretrizes para o Design de IHC.md",
-    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Planejamento da Avaliação de IHC.md",
-    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/MoLIC - 2.md",
-    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Avaliação Heurística.md",
-    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Análise Hierárquica de Tarefas (HTA).md",
-    "Screenshots/usabilidade2.png",
-    "Screenshots/usabilidade1.png",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_11 - 14_04_25.md",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_4 - 24_02_25.md",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_15 - 10_05_25.md",
+    "4o_semestre/MAC440_Eq.Dif.Series/MAC440-29_08_25.md",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_14 - 03_05_25.md",
+    "Sem título.canvas",
+    "3o_semestre/MAA110_AlgebraLinear/MAA110_2 - 17_02_25.md",
+    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_01.pdf",
+    "3o_semestre/ELD310_Redes/ELD310_5 - 26_02_25.md",
+    "3o_semestre/ELD310_Redes/ELD310_4 - 17_02_25.md",
+    "Screenshots/MAC440_1.png",
+    "4o_semestre/MAC440_Eq.Dif.Series",
+    "3o_semestre/CCM100_Arq.Org.Comp/PDFs/14-FLYNN.pdf",
+    "4o_semestre/CC410/Aula_1-12_08_25.md",
+    "4o_semestre/CC410",
+    "4o_semestre",
+    "3o_semestre/CCM100_Arq.Org.Comp/PDFs/13-RISC_e_Paralelismo.pdf",
+    "3o_semestre/CCM100_Arq.Org.Comp/PDFs/12-Estrutura_de_um_processador_e_armazenamento.pdf",
+    "3o_semestre/CCM100_Arq.Org.Comp/PDFs/11-Comunicação.pdf",
+    "3o_semestre/CCM100_Arq.Org.Comp/PDFs/10-Array.pdf",
+    "3o_semestre/CCM100_Arq.Org.Comp/PDFs/09-Tempo_de_execução.pdf",
+    "3o_semestre/CCM100_Arq.Org.Comp/CCM100_7 - 21_03_25.md",
+    "3o_semestre/CCM100_Arq.Org.Comp/CCM100_6 - 14_03_25.md",
+    "3o_semestre/CCM100_Arq.Org.Comp/CCM100_5 - 07_03_25.md",
+    "3o_semestre/CCM100_Arq.Org.Comp/CCM100_3 - 21_02_25.md",
+    "3o_semestre/CCM100_Arq.Org.Comp/CCM100_2 - 14_02_25.md",
     "3o_semestre/CCP310_FrontEnd/CCP310_10 - 15_05_25.md",
     "3o_semestre/CCP310_FrontEnd/CCP310_9 - 23_04_25.md",
+    "3o_semestre/CCP310_FrontEnd/CCP310_8 - 27_03_25.md",
+    "3o_semestre/CCP310_FrontEnd/CCP310_7 - 20_03_25.md",
+    "3o_semestre/CCP310_FrontEnd/CCP310_6 - 13_03_25.md",
+    "3o_semestre/CCP310_FrontEnd/CCP310_5 - 06_03_25.md",
+    "3o_semestre/CCP310_FrontEnd/CCP310_4 - 27_02_25.md",
+    "3o_semestre/CCP310_FrontEnd/CCP310_3 - 20_02_25.md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Princípios e Diretrizes para o Design de IHC.md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Conceitos de IHC - Parte C.md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Conceitos de IHC - Parte B.md",
+    "3o_semestre/CCP310_FrontEnd/Anotações_Vídeos/Conceitos de IHC - Parte A.md",
+    "Screenshots/hta1.png",
+    "Screenshots/usabilidade2.png",
+    "Screenshots/usabilidade1.png",
     "3o_semestre/CCP310_FrontEnd/Mapa de Empatia.canvas",
-    "3o_semestre/ELD310_Redes/ELD310_14 - 14_05_25.md",
-    "3o_semestre/ELD310_Redes/ELD310_13 - 07_05_25.md",
-    "3o_semestre/ELD310_Redes/ELD310_11 - 23_04_25.md",
-    "3o_semestre/MAA110_AlgebraLinear/MAA110_12 - 24_04_25.md",
-    "3o_semestre/MAA110_AlgebraLinear/MAA110_11 - 14_04_25.md",
-    "3o_semestre/MAA110_AlgebraLinear/MAA110_10 - 07_04_25.md",
-    "3o_semestre/MAA110_AlgebraLinear/MAA110_13 - 27_04_25.md",
-    "3o_semestre/MAA110_AlgebraLinear/MAA110_15 - 10_05_25.md",
-    "3o_semestre/MAA110_AlgebraLinear/MAA110_14 - 03_05_25.md",
     "Screenshots/avaliacao_heuristica4.png",
     "Screenshots/avaliacao_heuristica3.png",
     "Screenshots/avaliacao_heuristica2.png",
-    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_10.pdf",
     "Screenshots/avaliacao_heuristica.png",
     "Screenshots/ELD310_13-8.png",
     "Screenshots/ELD310_13-9.png",
-    "Screenshots/ELD310_13-7.png",
-    "Screenshots/ELD310_13-6.png",
-    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_09.pdf",
-    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_ProjetoSubRedes.pdf",
-    "3o_semestre/ELD310_Redes/ELD310_10 - 09_04_25.md",
-    "3o_semestre/CCP310_FrontEnd/CCP310_8 - 27_03_25.md",
-    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_08.pdf",
-    "3o_semestre/ELD310_Redes/ELD310_5 - 26_02_25.md",
-    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_07_(2).pdf",
-    "3o_semestre/ELD310_Redes/PDFs/FEI_Redes_07_(1).pdf",
-    "3o_semestre/MAA110_AlgebraLinear/MAA110_8 - 24_03_25.md",
-    "3o_semestre/MAA110_AlgebraLinear/MAA110_7 - 17_03_25.md",
-    "3o_semestre/CCM100_Arq.Org.Comp/PDFs/06-Desvio_condicional.pdf",
-    "3o_semestre/CCM100_Arq.Org.Comp/PDFs/05-Subrotinas_e_interrupção.pdf",
-    "3o_semestre/CCM100_Arq.Org.Comp/PDFs/Gabarito-05.pdf",
-    "3o_semestre/CCM100_Arq.Org.Comp/PDFs/04-Memoria_e_opcodes.pdf",
     "STPex.canvas",
     "3o_semestre/Sem título.canvas"
   ]

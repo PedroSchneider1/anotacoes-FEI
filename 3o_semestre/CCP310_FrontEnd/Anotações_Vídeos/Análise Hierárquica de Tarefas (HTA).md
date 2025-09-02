@@ -8,4 +8,4 @@
 - Tarefas complexas são decompostas em uma hierarquia de objetivos, subobjetivos e operações.
 -  Um plano define a ordem em que os subobjetivos devem ser alcançados.
 
- 
+<img src="../../../Screenshots/hta1.png" width="80%" height="80%" />

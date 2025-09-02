@@ -4,5 +4,8 @@
   "enabledCssSnippets": [
     "defaultimagesize"
   ],
-  "accentColor": "#19764e"
+  "accentColor": "#19764e",
+  "textFontFamily": "Times New Roman",
+  "monospaceFontFamily": "Roboto Slab",
+  "interfaceFontFamily": "Arial"
 }
