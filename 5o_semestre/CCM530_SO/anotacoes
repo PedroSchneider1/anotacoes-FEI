@@ -1,0 +1,265 @@
+AULA 07 - SINCRONIZAÇÃO DE PROCESSOS
+	° Qual a diferença entre paralelismo e concorrência?
+	|_R.: Paralelismo descreve simultaneidade, e concorrência descreve preempção, ou seja, a intercalação de processos num período de tempo (e.g. uso das portas em sala de aula)
+
+> INCONSISTÊNCIA NO ACESSO COMPARTILHADO
+    E.g. Número de espaços livres no buffer:
+        |_ Produtor pode tentar produzir com buffer cheio
+        |_ Consumidor pode tentar consumir com buffer vazio
+
+    * Buffer circular (ideia do módulo no indice para loopar)
+    * Espera ocupada (literalmente fica esperando)
+
+> RACE CONDITION
+    Duas threads tentam acessar um mesmo recurso compartilhado, podendo causar uma "condição de corrida", ou seja, a manipulação do recurso depende do "timing" de acesso das threads.
+
+> REGIÕES CRÍTICAS
+    Trecho de código que só pode ser acessado por uma thread por vez.
+    Ela possui variáveis compartilhadas e que precisam ser SINCRONIZADAS.
+        * É onde pode acontecer o race condition!
+
+---------------------------------------------------------------------------------------------
+
+AULA 08 - DEADLOCKS
+    > Ocorrem quando threads estão competindo por recursos
+    
+Formalmente:
+Ocorrem quando "cada processo, em um conjunto de processos, está esperando por um evento que pode ser causado somente por outro processo no conjunto"
+
+    > RECURSOS COMPUTACIONAIS
+    Um sistema possui um nro. finito de recursos e cada um pode ser distribuído entre várias threads competindo.
+
+    ° O que é um recurso?
+    |_R.: Arquivos, ciclos de CPU, dispositivos de I/O, memória, etc.
+
+    O comportamento esperado de uma thread é:
+        1. Requisita recurso
+        2. Usa recurso
+        3. Libera recurso
+
+    > CONDIÇÕES PARA UM DEADLOCK
+    É necessário que as 4 CONDIÇÕES SEJAM ATENDIDAS:
+        - | EXCLUSÃO MÚTUA
+          |_ Pelo menos um recurso está em modo exclusivo, ou seja, somente uma thread consegue acessá-lo por vez. Se outra tentar acessar, ela deve entrar em espera.
+
+        - | NÃO PREEMPÇÃO
+          |_ O recurso só pode ser retirado VOLUNTARIAMENTE pela THREAD.
+
+        - | NÃO LIBERAÇÃO E ESPERA
+          |_ Uma thread está segurando pelo menos um recurso e esperando adquirir outro que também está sendo mantido por outra thread.
+
+        - | ESPERA CIRCULAR
+          |_ Existe um conjunto {T0, T1, T2, ..., Tn} de threads aguardando, sendo que: T0 aguarda um recurso de T1, T1 aguarda um recurso de T2, Tn-1 aguarda um recurso de Tn, Tn aguarda um recurso de T0.
+
+    > GRAFO PARA ALOCAÇÃO DE RECURSOS
+    Os nós podem ser THREADS (Tn) ou RECURSOS (Rn)
+    As arestas podem ser:
+    |_REQUISIÇÃO
+    |   - Uma aresta dirigida da Thread Ti para o recurso Rj é representado como: Ti -> Rj
+    |   - Significa que a Thread Ti requisitou um recurso Rj
+    |_POSSE
+        - Uma aresta dirigida do Recurso Rj para a Thread Tj é representado como: Rj -> Ti
+        - Significa que o Recurso Rj está em posse da Thread Ti
+
+    {Se um grafo não contém ciclos, nenhuma thread está em deadlock
+    {Se contém, um deadlock PODE existir
+
+---------------------------------------------------------------------------------------------
+
+AULA 09 - MEMÓRIA PRINCIPAL
+
+    > CICLO DE EXECUÇÃO DE INSTRUÇÃO DA CPU
+        * FETCH --- DECODE --- EXECUTE 
+
+    Dados em disco (memória secundária) precisam ser movidos para a memória principal, já que não podem ser acessados diretamente.
+        * "UM PROGRAMA SE TORNA UM PROCESSO QUANDO ESTÁ CARREGADO NA MEMÓRIA"
+
+    > ÁREA DE MEMÓRIA ENTRE PROCESSO
+   Delimitadas por dois registradores: | BASE             e  | LIMITE 
+                                       |_Endereço inicial    |_Intervalo de espaço ocupado
+
+    Se um processo tenta acessar um área fora do seu intervalo, gera uma TRAP.
+        { Endereço é (>= que base & < que base + limite)? Se sim, entra em memória.
+
+    ° Como desenvolvedores, podemos acessar a memória principal diretamente?
+    |_R.: Não, apenas via syscalls. Além disso, o próprio S.O. cria mais uma camada de abstração para manipular endereços.
+
+    > TIPOS/ABSTRAÇÕES DE ENDEREÇOS
+    O endereço gerado pela CPU é o endereço LÓGICO
+    O endereço visualizado pela unidade de memória é o endereço FÍSICO
+        * O fluxograma é o seguinte: CPU -> (endereço lógico) -> MMU (Memory Management Unity) -> (endereço físico) -> Memória principal
+
+    > ALOCAÇÃO DE MEMÓRIA
+    Usualmente, existem três abordagens:
+        |_ ALOCAÇÃO CONTÍNUA
+        | |_ MÉTODO DE MÚLTIPLAS PARTIÇÕES DE TAMANHO FIXO (fragmentação INTERNA)
+        | | |_ Divide a memória e cada partição pode conter somente um processo. Quando um processo finaliza, ele é substituído por outro na partição.
+        | |    * e.g. [ [ 2kb ] [ 2kb ] [ 2kb ] [ 2kb ] ]
+        | |_ MÉTODO DE PARTIÇÃO VARIÁVEL (fragmentação EXTERNA)
+        | | |_ "Chega um processo, toma uma partição; sai processo, fica um buraco disponível; a memória disponível representa um conjunto de buracos".
+        | |    * e.g. [ [ 2kb ] [     4kb     ] [1] [1] ]
+        | |
+        | |_ ESTRATÉGIAS¹
+        |      - First Fit
+        |      - Best Fit
+        |      - Worst Fit
+        | 
+        |_ SEGMENTAÇÃO
+        | |_ Divide um único processo em múltiplos segmentos, assim cada parte pertence a um segmento específico e cada segmento é alocado em um endereço de memória física (não necessariamente contíguo)
+        |
+        |_ PAGINAÇÃO
+          |_ Quebra a memória FÍSICA em múltiplas partes de tamanho fixo (FRAMES) e quebra a memória LÓGICA em múltiplas partes de menor tamanho fixo (PÁGINAS)
+          |_ Evita fragmentação externa mas pode causar interna na última página do processo
+
+¹ -> Estratégias de alocação de memória
+FIRST FIT
+    Procura o primeiro espaço de memória disponível
+BEST FIT
+    Procura o espaço de memória que melhor comporte o processo
+WORST FIT
+    Procura o maior espaço disponível
+
+---------------------------------------------------------------------------------------------
+
+AULA 10 - MEMÓRIA VIRTUAL
+
+    ° É possível executar um programa sem carregá-lo integralmente na memória?
+    |_R.: Sim, nem todas as partes do programa são executadas o tempo todo; outras são raramente acessadas; outras usam mais espaço do que precisam.
+
+    > PÁGINAS SOB DEMANDA (PAGINAÇÃO)
+    Carrega-se somente as páginas solicitadas, ou seja, tira do disco e coloca na principal (swap). No entanto, swap é custoso, já que se trata de uma operação de disco.
+
+    > PÁGINAS INVÁLIDAS
+    Se tentarmos acessar uma página que não está na memória fisica, temos um PAGE FAULT. Com isso, gera-se uma trap e a página faltante é solicitada do disco.
+    Precisamos de uma maneira de identificar páginas não carregadas: usamos um BIT DE CONTROLE.
+        |_ Se =1: está na memória física
+        |_ Senão: precisa ser carregada do disco
+
+    > TROCA DE PÁGINAS
+        * Já que não estamos carregando todo o processo na memória, aumentamos o grau de multiprogramação e o uso da CPU de forma eficiente.
+    Caso todos os processos precisassem ser carregados integralmente na memória, precisamos retirar alguma página não utilizada e trocar por outra prioritária.
+
+    PASSO A PASSO:
+        1. Encontra a página no disco
+        2. Encontra um frame livre
+            a) se tiver, use-o
+            b) senão, usa um ALGORITMO DE TROCA DE PÁGINA para determinar o FRAME VÍTIMA
+            c) escreve o FRAME VÍTIMA no disco e atualiza a tabela de páginas
+        3. Lê a página solicitada no novo frame e atualiza a tabela de páginas
+        4. COntinua o processo
+
+    > ALGORITMOS DE TROCA DE PÁGINAS
+        * HIT RATE: páginas acessadas que JÁ ESTAVAM na memória
+        * MISS RATE: n - HIT (páginas que precisam ser carregadas)
+
+    FIFO (Fila) [Tem a anomalia de Belady pq é uma fila]
+        Quando uma página precisar ser substituída, a mais antiga sairá
+    OPT (Optimal Page Replacement)
+        Substitui a página que não será usada pelo período mais longo ("prevê o futuro")
+    LRU (Least Recent Used)
+        Substitui a página não utilizada pelo período mais longo
+
+---------------------------------------------------------------------------------------------
+
+AULA 11 - SISTEMAS DE ARQUIVO
+
+    > HDD
+    Formado por DISCOS (PRATOS)
+        Os pratos são formados por TRILHOS, que por sua vez são dividos em SETORES
+    Um CILINDRO é um conjunto de trilhos que ficam na mesma posição, mas em pratos diferentes
+
+    Cada trilha pode possuir centenas de setores, todos com tamanho fixo e são a menor unidade de leitura.
+        * O HDD usa magnetismo e ferrofluído para realizar a escrita.
+
+    CARACTERÍSTICAS IMPORTANTES:
+        - Taxa de Transferência
+          |_ A velocidade de trabalho, ou seja, a taxa em que os dados fluem entre o disco e o PC
+
+        - Tempo de posicionamento
+          |_ SEEK TIME
+          |  |_ Tempo necessário para mover a cabeça para o cilindro correto
+          |
+          |_ ROTATIONAL LATENCY
+             |_ Tempo necessário para o setor correto rotacionar até a cabeça
+
+    > ESCALONAMENTO DE HDD
+        FCFS (Fila)
+        SCAN
+            * Busca o mais próximo
+        C-SCAN
+            * Gira em um único sentido
+
+    > SSD
+    São formados por um controlador e alguns NAND flash chip.
+    Semicondutores NAND podem ser lidos e escritos em PÁGINAS (similar a um setor), mas os dados NÃO PODEM SER SOBRESCRITOS (antes disso, as células NAND precisam ser zeradas).
+
+    CARACTERÍSTICAS IMPORTANTES:
+        - Tempo para apagar os dados
+          |_ Tarefa mais lenta
+
+        - Tempo de leitura
+          |_ Tarefa mais rápida
+
+        - Tempo de escrita
+          |_ Mais lento que a leitura, mas mais rápido que apagar (precisa ler e depois apagar)
+
+        * Os semicondutores NAND se deterioram em cada CICLO DE APAGAR, e sua vida útil é medida em Drive Write Per Day (DWPD)
+
+        WEAR LEVELING: Os controladores tentam evitar o desgaste em pontos específicos, distribuindo os dados ao longo dos blocos que foram pouco escritos.
+
+     > RAID (Redundant Arrays of Independent Disks)
+
+     CARACTERÍSTICAS IMPORTANTES:
+        - Mirrowing
+          |_ Cada disco lógico tem dois discos físicos e cada escrita é feita em ambos (redundância e backup)
+
+        - Data striping
+          |_ Divide os bits de cada byte entre múltiplos discos, aumentando a participação em cada acesso (leitura e escrita, mais velocidade)
+
+      O balanceamento entre essas técnicas/características são os RAID LEVELS, que atingem redundância e performance.
+
+---------------------------------------------------------------------------------------------
+
+AULA 12 - DIRETÓRIO E ABSTRAÇÕES S.O.
+
+    > ABSTRAÇÕES
+        Endereço lógico, processo e arquivo
+
+    > ARQUIVO
+    É um conjunto de informações relacionadas e armazenadas no disco. Dados só podem ser escritos no disco se estiverem em um arquivo.
+        * A estrutura de um arquivo é formada por uma sequência de bit, bytes, linhas...
+
+    Os tipos de arquivo são definidos pela extensão.
+    Arquivo é o recurso usado para armazenas e recuperar dados.
+
+    ATRIBUTOS DE UM ARQUIVO
+        - Nome
+        - Identificador
+        - Tipo
+        - Localização (ponteiro para o dispositivo que o armazena)
+        - Tamanho
+        - Timestamp
+        - Proteção
+            etc...
+
+        > OPERAÇÕES SOBRE ARQUIVOS
+            |_ Criar
+               |_ 1. Encontrar espaço livre no disco
+               |_ 2. Criar uma entrada na estrutura do diretório
+            |_ Abrir
+               |_ Criar um FILE HANDLER (gerenciador de arquivo)
+            |_ Ler
+               |_ Faz uma sys call especificando o file handler e o bloco de memória a ser lido
+            |_ Escrever
+               |_ Faz uma sys call especificando o file handler e o dado a ser escrito
+
+     > DIRETÓRIO
+     É um tipo de arquivo que pode ser visto como uma tabela de símbolos. Seu objetivo é traduzir nomes em blocos de controle de arquivo.
+
+     ORGANIZAÇÃO DOS DIRETÓRIOS
+        |_ One level
+           |_ A forma mais simples: um único diretório contendo todos os arquivos com nomes únicos
+        |_ Two level
+           |_ Um diretório para cada usuário
+        |_ Tree-Structure
+           |_ Organização em árvore, cria subdiretórios e garante liberdade de organização de arquivos

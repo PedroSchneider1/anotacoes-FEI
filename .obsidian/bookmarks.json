@@ -490,6 +490,107 @@
         }
       ],
       "title": "3o_Semestre"
+    },
+    {
+      "type": "group",
+      "ctime": 1759250106280,
+      "items": [
+        {
+          "type": "group",
+          "ctime": 1759250626353,
+          "items": [
+            {
+              "type": "file",
+              "ctime": 1759250620436,
+              "path": "4o_semestre/MAC440_Eq.Dif.Series/MAC440_1-29_08_25.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1759250620436,
+              "path": "4o_semestre/MAC440_Eq.Dif.Series/MAC440_2-05_09_25.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1759250620436,
+              "path": "4o_semestre/MAC440_Eq.Dif.Series/MAC440_3-12_09_25.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1759250620436,
+              "path": "4o_semestre/MAC440_Eq.Dif.Series/MAC440_4-17_09_25.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1759250620436,
+              "path": "4o_semestre/MAC440_Eq.Dif.Series/MAC440_5-26_09_25.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1759250620436,
+              "path": "4o_semestre/MAC440_Eq.Dif.Series/MAC440_6-03_10_25.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1759250620436,
+              "path": "4o_semestre/MAC440_Eq.Dif.Series/MAC440_7-10_10_25.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1759250620436,
+              "path": "4o_semestre/MAC440_Eq.Dif.Series/MAC440_8-17_10_25.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1759250620436,
+              "path": "4o_semestre/MAC440_Eq.Dif.Series/MAC440_9-24_10_25.md"
+            }
+          ],
+          "title": "MAC440"
+        },
+        {
+          "type": "group",
+          "ctime": 1759250338895,
+          "items": [
+            {
+              "type": "file",
+              "ctime": 1759250336031,
+              "path": "4o_semestre/CCA410_Estr.Dados/CCA410-12_08_25.md"
+            },
+            {
+              "type": "file",
+              "ctime": 1759250336031,
+              "path": "4o_semestre/CCA410_Estr.Dados/CCA410-19_08_25.md"
+            }
+          ],
+          "title": "CCA410"
+        }
+      ],
+      "title": "4o_Semestre"
+    },
+    {
+      "type": "group",
+      "ctime": 1772590371506,
+      "items": [
+        {
+          "type": "group",
+          "ctime": 1772590491159,
+          "items": [
+            {
+              "type": "file",
+              "ctime": 1772590512012,
+              "path": "5o_semestre/CCI130_IHC/CCI130-10_02_26.md",
+              "title": ""
+            }
+          ],
+          "title": "CCI130"
+        },
+        {
+          "type": "file",
+          "ctime": 1772590553769,
+          "path": "5o_semestre/Entregas.md"
+        }
+      ],
+      "title": "5o_Semestre"
     }
   ]
 }
