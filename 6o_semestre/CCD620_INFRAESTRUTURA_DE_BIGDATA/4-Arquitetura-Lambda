@@ -73,4 +73,36 @@ Unifica saída batch + speed pra essa consulta e define contratos de acesso, SLA
 Ai que vem a malandragem, basicamente vamos ter um histórico consolidado (que veio do batch) e dados mais recentes (vindos da speed) complementando. Aplicamos uma regra de merge por tempo/chave (responsa da serving layer) e como resultado vamos ter uma visão "quase"   
 
 
+Podemos pensar num cenário onde precisamos monitorar transações e comportamento de usuários (exemplo do banco digital).
 
+Nesse caso, eu como usuário preciso saber praticamente de maneira imediata se alguém tentar invadir a minha conta ou realizar alguma transação no meu nome, logo se faz necessário alertas imediatos de risco **(speed)**. 
+Por outro lado, não é necessário que o banco inclua essa transação no seu dashboard em tempo real, dado o volume de transações e dados não seria nenhum pouco eficiente processar isso a cada transação (e praticamente impossível também). Logo, para relatórios consolidados não precisamos desse imediatismo **(batch)**.
+E por último, o excutivo que vai tomar decisões não sabe absolutamente nada sobre o interior do sistema, logo precisamos apenas dar um jeito de consolidar esses dados pra ele de maneira que ele consiga tomar suas decisões com base em dados atualizados, mas que podem não estar totalmente consistentes. Nesse caso não temos muito problema em fazer isso, já que é uma variação praticamente insignificante.
+
+
+### Reprocessamento - E se mudarmos as regras?
+
+Vamos ter que recalcular o histórico completo na batch layer, já que todo processamento que nós fizemos nela depende da regra de negócio antiga Além disso, aplicamos correções em divergências eventuais na speel layer e por último o serving passa a expor a nova verdade.
+
+### Consistência:
+
+Como ainda utilizamos a camada **batch**, temos uma consistência eventual, não instantânea. Logo, podemos ter alguns pequenos gargalos entre a realidade e os dados exibidos. 
+
+### Tradeoffs:
+
+**Vantagens:**
+- Temos baixa latência + consistência histórica
+- Podemos mudar a regra de negócio, visto que temos reprocessamento completo
+- Maior resiliência para ambientes críticos de dados
+- Serve muito bem pra cenários com exigência analítica e 
+operacional.
+
+**Desvantagens:** 
+- Dois **pipelines** pra manter (batch e stream)
+- Maior complexidade de desenvolvimento e operação
+- Possível duplicação de lógica de transformação
+- Custo mais alto de observabilidade e governança
+
+### Quando evitar lambda?
+
+Caso o time seja pequeno e não possua conhecimento sobre stream + batch, baixa exigência em tempo real e cenários em que um único pipeline orientado a eventos já atende sem problemas
