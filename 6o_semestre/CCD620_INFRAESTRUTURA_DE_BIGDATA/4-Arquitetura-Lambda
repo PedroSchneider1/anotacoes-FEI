@@ -106,3 +106,29 @@ operacional.
 ### Quando evitar lambda?
 
 Caso o time seja pequeno e não possua conhecimento sobre stream + batch, baixa exigência em tempo real e cenários em que um único pipeline orientado a eventos já atende sem problemas
+
+
+
+
+
+
+
+
+
+
+# Arquitetura Kappa
+
+
+### Hoje eu tenho que sair da aula sabendo:
+
+
+• explicar o propósito da arquitetura Kappa em plataformas de dados;
+• diferenciar claramente event log, processamento contínuo e serving layer;
+• discutir trade-offs entre latência, retenção de eventos e consistência;
+• decidir quando Kappa é adequada (ou não) para um contexto de negócio.
+
+
+
+### Problemas que a arquitetura Kappa resolve:
+
+Basicamente ele serve para problemas que precisam de resposta rápida e capacidade de reprocessamento ao mesmo tempo. Na semana passada vimos a lambda que separava speed de batch epra isso tinha que duplicar 
