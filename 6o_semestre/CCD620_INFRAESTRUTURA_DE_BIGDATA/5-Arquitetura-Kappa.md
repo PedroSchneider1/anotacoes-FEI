@@ -5,9 +5,13 @@
 
 
 • explicar o propósito da arquitetura Kappa em plataformas de dados;
+
 • diferenciar claramente event log, processamento contínuo e serving layer;
+
 • discutir trade-offs entre latência, retenção de eventos e consistência;
+
 • decidir quando Kappa é adequada (ou não) para um contexto de negócio.
+
 
 
 
@@ -143,4 +147,18 @@ Podemos concluir que o **kappa** tenta equilibrar velocidade de resposta, simpli
 Funciona bem com  fluxo contínuo de enventos e seu sucesso depende mais da disciplina operacional do que de ferramenta específica.
 
 
+### Extra: Lab
 
+Alterar regras em process_event() e rodar novo rebuild;
+
+R: No meu caso eu fiz uma alteração bobinha, mudando o purchase total pra 2 ao invés de 1 a cada processamento de uma operação de compra
+
+Comparar métricas antes/depois da mudança de regra;
+
+R: Pelo que eu percebi o purchase_amount dobrou, porémas compras não eram processadas duas vezes.
+
+Discutir como retenção de eventos impacta custo e governança na Kappa.
+
+R: Reter eventos pode ser algo bom e ruim ao mesmo tempo. No meu caso, uma simples mudança onde o contador passa a contabilizar duas compras ao invés de uma é algo simples e que não interfere
+no meu schema. Porém,se eu fizesse alguma alteração maior incluindo algum novo campo ou até mesmo modificando a estrutura de algum existente, ai sim teríamos problemas, visto que a próxima vez que eu for reprocessar esses eventos
+eu deveria ir somente até esse ponto e parar, sem processar os dados antigos (pois já não estão no formato que o pipe aceita e eu não consigo reprocessar esses caras).
